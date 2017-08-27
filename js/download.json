@@ -1,0 +1,32 @@
+<pre>array(1) {
+  [0]=>
+  array(13) {
+    ["id"]=>
+    int(59)
+    ["email"]=>
+    string(17) "eladshw@gmail.com"
+    ["first_name"]=>
+    string(9) "אלעד7"
+    ["last_name"]=>
+    string(10) "שוורץ"
+    ["created_date"]=>
+    string(19) "2016-05-15 13:13:15"
+    ["birth_date"]=>
+    string(10) "2016-05-15"
+    ["sign_date"]=>
+    string(10) "2016-05-15"
+    ["phone_number"]=>
+    string(6) "543345"
+    ["goals"]=>
+    int(1)
+    ["trx"]=>
+    int(1)
+    ["image"]=>
+    string(0) ""
+    ["program"]=>
+    string(17) "פשוט לרוץ"
+    ["ref"]=>
+    string(8) "אלעד"
+  }
+}
+</pre>)]}'

@@ -1,0 +1,50 @@
+<div class="form-group ">
+    <table class="table table-test" >
+        <thead>
+        <tr class="tableheader-friends">
+            <th>Date</th>
+            <th>A close goal</th>
+            <th> A distant goal </th>
+            <th class="remove-benfit">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="goal in custfactory.goalsarr">
+            <td class="">{{goal.date_goal|date:"dd-MM-yyyy"}}</td>
+            <td class="">{{goal.short_goal}}</td>
+            <td class="">{{goal.long_goal}}</td>
+            <td class="friend-customers"><img src="http://justrun.site/images/trash.svg" class="trash-customers-friend-file" ng-click="deleteGoal(goal.id,$index)"/></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="form-group" >
+    <label class="col-sm-3 control-label" >Date:</label >
+    <div class="col-sm-9">
+        <input type="date"
+               class="form-control"
+               name="test_date"
+               ng-model="custfactory.form_data_goals.date_goal"
+               required />
+    </div >
+
+</div >
+
+<div class="form-group " >
+    <label class="col-sm-3 control-label" >A close goal</label >
+    <div class="col-sm-9">
+        <input type="text" class="form-control"  ng-model="custfactory.form_data_goals.short_goal" required />
+    </div>
+</div>
+<div class="form-group " >
+    <label class="col-sm-3 control-label" >A distant goal</label >
+    <div class="col-sm-9">
+        <input type="text" class="form-control"  ng-model="custfactory.form_data_goals.long_goal" required />
+    </div>
+</div>
+
+<div class="buttons" >
+    <button class="btn btn-primary btn-block form-control edit-customer-details-form" type="submit" ng-click="custfactory.createNewGoal(customerObj.id)" >Save</button >
+</div>
+

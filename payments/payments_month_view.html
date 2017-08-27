@@ -1,0 +1,132 @@
+<div class="panel panel-primary panel-payments-main" style="position: absolute;left:15%;margin: 15px;top:150px;">
+    <div class="panel-heading payments-heading">
+		<div class="row">
+			<div class="payments-year-header">
+			<div class="col-md-4 col-xs-4">Year:</div>
+       
+        <div class="col-md-2 col-xs-2" year-drop offset="-1" range="30"></div>
+			</div>
+			</div>
+    </div>
+
+<table class="table table-condensed payment-month-table"  infinite-scroll="payments.loadMore_Month(payments.counter_month)">
+    <thead class="full-payment-head-table">
+    <tr class="tableheader payment-thead-table">
+        <th>#</th>
+		<th ><span class="paymant-month-col-name-private">First Name</span>
+            <div ng-dropdown-multiselect="" options="payments.filters.firstname_month" selected-model="payments.firstname_month" extra-settings="settings_first_name_month" translation-texts="translations"
+                 events="selecEvents_First_name_month">
+
+            </div>
+        </th>
+		<th ><span class="paymant-month-col-name">Last Name</span>
+            <div ng-dropdown-multiselect="" options="payments.filters.lastname_month" selected-model="payments.lastname_month" extra-settings="settings_last_name_month" translation-texts="translations"
+                 events="selecEvents_Last_name_month">
+
+            </div>
+        </th>
+        <th>
+		<span class="payment-month-name">January</span>
+        <br>
+			<div class="payment-amount">&#8362{{payments.total_month[0]}}</div>
+        </th>
+        <th>
+			<span class="payment-month-name">February</span>
+			
+            <br>
+            <div class="payment-amount">&#8362{{payments.total_month[1]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">March</span>
+			
+            <br>
+            <div class="payment-amount">&#8362{{payments.total_month[2]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">April</span>
+			
+            <br>
+            <div class="payment-amount">&#8362{{payments.total_month[3]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">May</span>
+			
+            <br>
+            <div class="payment-amount">&#8362{{payments.total_month[4]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">June</span>
+			
+            <br>
+           <div class="payment-amount">&#8362{{payments.total_month[5]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">July</span>
+			
+            <br>
+            <div class="payment-amount">&#8362{{payments.total_month[6]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">August</span>
+			
+            <br>
+            <div class="payment-amount">&#8362{{payments.total_month[7]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">September</span>
+			
+            <br>
+           <div class="payment-amount">&#8362{{payments.total_month[8]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">October</span>
+			
+            <br>
+            <div class="payment-amount">&#8362{{payments.total_month[9]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">November</span>
+			
+            <br>
+           <div class="payment-amount">&#8362{{payments.total_month[10]}}</div>
+        </th>
+        <th >
+			<span class="payment-month-name">December</span>
+		  <br>
+            <div class="payment-amount">&#8362{{payments.total_month[11]}}</div>
+        </th>
+        <th>
+            <span class="payment-month-name">Update</span>
+            <br>
+        </th>
+    </tr>
+    </thead>
+    <tbody class="full-payment-body-table">
+    <tr ng-repeat="payment in payments.payments_per_month|byear:payments.year_chosen" ng-click="showDetails(payment.user_id,payment.first_name,payment.last_name)" >
+        <!--track by $index-->
+        <td class="index-customer-table"><div>{{$index + 1}}</div></td>
+        <td>{{payment.first_name}}
+        <td>{{payment.last_name}}</td>
+        <td>{{payment.months[0]}}</td>
+        <td>{{payment.months[1]}}</td>
+        <td>{{payment.months[2]}}</td>
+        <td>{{payment.months[3]}}</td>
+        <td>{{payment.months[4]}}</td>
+        <td>{{payment.months[5]}}</td>
+        <td>{{payment.months[6]}}</td>
+        <td>{{payment.months[7]}}</td>
+        <td>{{payment.months[8]}}</td>
+        <td>{{payment.months[9]}}</td>
+        <td>{{payment.months[10]}}</td>
+        <td>{{payment.months[11]}}</td>
+        <td>
+        <span ng-click="update(payment.user_id,payment.id,payment.first_name,payment.last_name,payment.payment_date,$index);$event.stopPropagation()" class="update-payment-update-button-table"></span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+    <div class="loading" ng-show ="payments.isloading_month || payments.isdeleting_month" style="position: absolute">
+        <span>{{payments.loadingtext}}</span><md-progress-circular md-mode="indeterminate" style="margin: auto" md-diameter="100"></md-progress-circular>
+    </div>
+</div>

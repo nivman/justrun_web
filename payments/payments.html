@@ -1,0 +1,23 @@
+<div id="block-massage" class="alert alert-info">
+	
+	<p>Table ony appear in vertical view</p>
+
+</div>
+<div class="container-fluid main-payment-container" ng-init="init()">
+	<div class="row payment-wrapper" style="position: relative;left:18%">
+		<div class="col-md-2 col-xs-6">
+			<button class="btn btn-primary pull-right enter-new-payment-button" ng-click="showmodal()">New Payment</button>
+		</div>
+		<div class="col-md-2 col-xs-2">
+			<button class="btn btn-primary pull-right btn-change-view" ng-click="changeToFullView()">{{viewButtonText}}</button>
+		</div>
+	</div>
+
+	<form class="form-inline">
+		<div class="row paymant-table">
+			<ng-include id="payments_full_table" src="'payments/payments_full_table.html'" ng-if="isFullTable"></ng-include>
+			<ng-include id="payments_month_view" src="'payments/payments_month_view.html'" ng-if="!isFullTable" onload="finishLoading()"></ng-include>
+		</div>
+	</form>
+</div>
+

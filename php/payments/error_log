@@ -1,0 +1,93 @@
+[04-Jan-2017 12:39:18 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[04-Jan-2017 12:39:18 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[04-Jan-2017 12:39:18 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[04-Jan-2017 12:39:18 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[04-Jan-2017 12:39:19 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[04-Jan-2017 12:39:19 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[04-Jan-2017 12:39:19 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[04-Jan-2017 12:39:21 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[05-Jan-2017 03:57:03 America/Chicago] PHP Notice:  Undefined index: start in /home1/justrun/public_html/php/payments/getPayments_Month.php on line 8
+[05-Jan-2017 03:57:03 America/Chicago] PHP Notice:  Undefined index: end in /home1/justrun/public_html/php/payments/getPayments_Month.php on line 9
+[05-Jan-2017 04:05:06 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/payments/getTotalPayment.php on line 151
+[05-Jan-2017 04:05:06 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/payments/getTotalPayment.php on line 151
+[05-Jan-2017 04:05:08 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/payments/getTotalPayment.php on line 151
+[05-Jan-2017 04:05:08 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/payments/getTotalPayment.php on line 151
+[12-Apr-2017 08:49:49 Etc/GMT] PHP Notice:  Undefined variable: data in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 11
+[12-Apr-2017 08:49:49 Etc/GMT] PHP Notice:  Trying to get property of non-object in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 11
+[12-Apr-2017 08:49:49 Etc/GMT] PHP Notice:  Undefined variable: data in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 12
+[12-Apr-2017 08:49:49 Etc/GMT] PHP Notice:  Trying to get property of non-object in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 12
+[12-Apr-2017 08:50:56 Etc/GMT] PHP Notice:  Undefined variable: data in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 11
+[12-Apr-2017 08:50:56 Etc/GMT] PHP Notice:  Trying to get property of non-object in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 11
+[12-Apr-2017 08:50:56 Etc/GMT] PHP Notice:  Undefined variable: data in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 12
+[12-Apr-2017 08:50:56 Etc/GMT] PHP Notice:  Trying to get property of non-object in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 12
+[12-Apr-2017 09:22:10 Etc/GMT] PHP Notice:  Undefined variable: data in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 11
+[12-Apr-2017 09:22:10 Etc/GMT] PHP Notice:  Trying to get property of non-object in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 11
+[12-Apr-2017 09:22:10 Etc/GMT] PHP Notice:  Undefined variable: data in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 12
+[12-Apr-2017 09:22:10 Etc/GMT] PHP Notice:  Trying to get property of non-object in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 12
+[24-Apr-2017 12:28:55 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:28:55 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:28:56 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:28:56 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:29:43 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:30:17 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:30:18 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:30:19 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:33:11 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:33:12 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:33:13 Etc/GMT] PHP Fatal error:  Cannot use try without catch or finally in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 46
+[24-Apr-2017 12:57:50 Etc/GMT] PHP Notice:  Undefined property: stdClass::$total in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 33
+[24-Apr-2017 12:57:50 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_type in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 35
+[24-Apr-2017 12:57:50 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_for in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 36
+[24-Apr-2017 12:57:50 Etc/GMT] PHP Notice:  Undefined property: stdClass::$receipt_type in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 37
+[24-Apr-2017 12:57:50 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 38
+[24-Apr-2017 12:58:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$total in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 33
+[24-Apr-2017 12:58:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_type in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 35
+[24-Apr-2017 12:58:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_for in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 36
+[24-Apr-2017 12:58:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$receipt_type in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 37
+[24-Apr-2017 12:58:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 38
+[24-Apr-2017 12:58:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 79
+[25-Apr-2017 07:33:00 Etc/GMT] PHP Notice:  Undefined property: stdClass::$first_name in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 14
+[25-Apr-2017 07:33:00 Etc/GMT] PHP Notice:  Undefined property: stdClass::$last_name in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 15
+[25-Apr-2017 07:33:00 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 15
+[25-Apr-2017 07:33:00 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 38
+[25-Apr-2017 07:33:00 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 40
+[25-Apr-2017 07:33:00 Etc/GMT] PHP Notice:  Undefined property: stdClass::$first_name in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 26
+[25-Apr-2017 07:33:00 Etc/GMT] PHP Notice:  Undefined property: stdClass::$last_name in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 27
+[25-Apr-2017 07:33:00 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 64
+[25-Apr-2017 07:33:00 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 79
+[25-Apr-2017 07:33:01 Etc/GMT] PHP Notice:  Undefined index: user_id in /home/nimadral/public_html/justrun/php/payments/getPayments_Month.php on line 24
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$first_name in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 14
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$last_name in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 15
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 38
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 40
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 15
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$first_name in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 26
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$last_name in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 27
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 64
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 79
+[25-Apr-2017 07:33:04 Etc/GMT] PHP Notice:  Undefined index: user_id in /home/nimadral/public_html/justrun/php/payments/getPayments_Month.php on line 24
+[25-Apr-2017 07:33:07 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 15
+[25-Apr-2017 07:33:07 Etc/GMT] PHP Notice:  Undefined property: stdClass::$first_name in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 14
+[25-Apr-2017 07:33:07 Etc/GMT] PHP Notice:  Undefined property: stdClass::$last_name in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 15
+[25-Apr-2017 07:33:07 Etc/GMT] PHP Notice:  Undefined property: stdClass::$first_name in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 26
+[25-Apr-2017 07:33:07 Etc/GMT] PHP Notice:  Undefined property: stdClass::$last_name in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 27
+[25-Apr-2017 07:33:07 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 38
+[25-Apr-2017 07:33:07 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 40
+[25-Apr-2017 07:33:07 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 64
+[25-Apr-2017 07:33:07 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 79
+[25-Apr-2017 07:33:08 Etc/GMT] PHP Notice:  Undefined index: user_id in /home/nimadral/public_html/justrun/php/payments/getPayments_Month.php on line 24
+[25-Apr-2017 07:33:10 Etc/GMT] PHP Notice:  Undefined property: stdClass::$first_name in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 14
+[25-Apr-2017 07:33:10 Etc/GMT] PHP Notice:  Undefined property: stdClass::$last_name in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 15
+[25-Apr-2017 07:33:10 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 38
+[25-Apr-2017 07:33:10 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPayment.php on line 40
+[25-Apr-2017 07:33:10 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 15
+[25-Apr-2017 07:33:10 Etc/GMT] PHP Notice:  Undefined property: stdClass::$first_name in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 26
+[25-Apr-2017 07:33:10 Etc/GMT] PHP Notice:  Undefined property: stdClass::$last_name in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 27
+[25-Apr-2017 07:33:10 Etc/GMT] PHP Notice:  Undefined property: stdClass::$user_id in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 64
+[25-Apr-2017 07:33:10 Etc/GMT] PHP Notice:  Undefined property: stdClass::$payment_date in /home/nimadral/public_html/justrun/php/payments/createPaymentMonth.php on line 79
+[25-Apr-2017 07:33:11 Etc/GMT] PHP Notice:  Undefined index: user_id in /home/nimadral/public_html/justrun/php/payments/getPayments_Month.php on line 24
+[27-Aug-2017 08:58:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/nimadral/public_html/justrun/php/payments/filterPayments.php on line 4
+[27-Aug-2017 08:58:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/nimadral/public_html/justrun/php/payments/filterPayments.php on line 4
+[27-Aug-2017 08:58:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/nimadral/public_html/justrun/php/payments/filterPayments.php on line 4
+[27-Aug-2017 08:58:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/nimadral/public_html/justrun/php/payments/filterPayments.php on line 4
+[27-Aug-2017 08:58:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/nimadral/public_html/justrun/php/payments/filterPayments.php on line 4

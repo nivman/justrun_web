@@ -1,0 +1,45 @@
+<div class="form-group ">
+    <table class="table" >
+        <thead>
+        <tr class="tableheader-friends">
+            <th>Name</th>
+            <th>Date</th>
+            <th class="ticked-used">Used?</th>
+			<th class="remove-benfit">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="friend in custfactory.friendsarr">
+            <td class="filename">{{friend.friend_name}}</td>
+            <td class="filename">{{friend.friend_date|date:"dd-MM-yyyy"}}</td>
+            <td class="friend-used"> <input  type="checkbox"  ng-model="friend.used"  ng-true-value="1" ng-false-value="0" ng-click="updateUsedFriend(friend.id,friend.used)"> </td>
+            <td class="friend-customers"><img src="http://justrun.site/images/trash.svg" class="trash-customers-friend-file" ng-click="deleteFriends(friend.id,friend.friend_name,$index)"/></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+    <div class="form-group " >
+        <label class="col-sm-3 control-label" >Enter name</label >
+        <div class="col-sm-9">
+            <input type="text" class="form-control" name="friend" ng-model="custfactory.form_data_friend.friend_name" required />
+        </div>
+    </div>
+
+<div class="form-group" >
+    <label class="col-sm-3 control-label" >Date:</label >
+    <div class="col-sm-9">
+        <input type="date"
+               class="form-control"
+               name="test_date"
+               ng-model="custfactory.form_data_friend.friend_date"
+               required />
+    </div >
+
+</div >
+
+<div class="buttons" >
+    <button class="btn btn-primary btn-block form-control edit-customer-details-form" type="submit" ng-click="custfactory.createNewFriend(customerObj.id)" >Save</button >
+</div>
+
+

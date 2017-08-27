@@ -1,0 +1,171 @@
+
+<div ng-if="container=='true'" class="container">
+	<!-- Modal -->
+	<div class="modal" id="repeatModal" role="dialog">
+		<div id="reapet-main-wrapper" class="modal-dialog">
+
+
+			<!-- Modal content-->
+			<div id="modal-content-repeat" class="modal-content">
+				<div class="modal-header repeat-header">
+					<button type="button" class="close close-repeat" ng-click="hideRepeatDialog()">&times;</button>
+					<h4 class="modal-title-repeat modal-title"> Recurring reminder</h4>
+				</div>
+				<div class="modal-body">
+					<div ng-show="neweventservice.checkOverlap==true" id="check_overlaping_repeat">
+						<div layout="row" layout-sm="column" layout-align="space-around">
+							<md-progress-circular md-mode="indeterminate"></md-progress-circular>
+							<h5>Checking overlapping reminders</h5>
+						</div>
+					</div>
+					<form ng-submit="neweventservice.repeatform()" role="form" ng-model="neweventservice.formRepeatEvent.repeatForm" novalidate>
+						<div class="form-group">
+							<label id="repeats" class="col-sm-3 reapet-labal-text">Time for event </label>
+							<div class="col-sm-9 input-group  repeat-input-group">
+								<select name="repeat" class="form-control" ng-model="neweventservice.formRepeatEvent.repeats">
+									<option value="">Select time interval</option>
+									<option value="1">Daily</option>
+									<option value="2">Weekly</option>
+									<option value="3">Monthly</option>
+									<option value="4">Annual</option>
+								</select>
+
+							</div>
+						</div>
+						<div ng-show="neweventservice.formRepeatEvent.repeats=='1' || neweventservice.formRepeatEvent.repeats=='3' || neweventservice.formRepeatEvent.repeats=='4'" class="form-group">
+							<label ng-if="neweventservice.formRepeatEvent.repeats=='1'" id="repeatsfreq_day" class="col-sm-3 reapet-labal-text">Reminder frequency</label>
+							<label ng-if="neweventservice.formRepeatEvent.repeats=='3' || neweventservice.formRepeatEvent.repeats=='4'" id="repeatsfreq_mounth" class="col-sm-3 reapet-labal-text">Day Reminder</label>
+							<div class="col-sm-9 input-group  repeat-input-group">
+
+								<select name="reminder" class="form-control" ng-model="neweventservice.formRepeatEvent.repeatsEvery" ng-required="true">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+								</select>
+							</div>
+						</div>
+						<div ng-show="neweventservice.formRepeatEvent.repeats=='2'" class="form-group form-group-checkbox">
+							<div class="col-xs-12 col-md-12  col-sm-12 input-group checkbox-group">
+								<label class="daycheck col-md-2" ng-repeat="(dayKey, day) in days">
+									<input type="checkbox" ng-model="neweventservice.formRepeatEvent.selected[day.value]" name="selecteddays[]" value="{{day.value}}">
+									<label class="day-name-label">{{day.name}}</label>
+								</label>
+
+							</div>
+
+						</div>
+
+						<div class="form-group ">
+							<label id="starton" class="col-sm-3 reapet-labal-text "> Start Date</label>
+							<div class="col-sm-9 input-group  repeat-start-date-group">
+								<p ng-modal="neweventservice.formRepeatEvent.startDateRepeat">{{formatStartDate}}</p>
+							</div>
+						</div>
+						<div ng-show="neweventservice.formRepeatEvent.repeats=='3'|| neweventservice.formRepeatEvent.repeats=='4'" class="form-group">
+							<label id="repeatsfreq" class="col-sm-3 reapet-labal-text">Number of years</label>
+							<div class="col-sm-9 input-group repeat-input-group">
+
+								<select name="reminderYear" class="form-control" ng-model="neweventservice.formRepeatEvent.repeatsYearEvery" ng-required="true">
+									<option value="1">Year</option>
+									<option value="2">Two years</option>
+									<option value="3">Three years</option>
+									<option value="4">Four years</option>
+									<option value="5">Five years </option>
+									<option value="6">Six years</option>
+									<option value="7">Seven years</option>
+									<option value="8">Eight years</option>
+									<option value="9">Nine years</option>
+									<option value="10">Ten years</option>
+								</select>
+							</div>
+						</div>
+						<div ng-show="neweventservice.formRepeatEvent.repeats=='4'" class="form-group">
+							<label id="repeatsfreq" class="col-sm-3 reapet-labal-text">Month for reminder</label>
+							<div class="col-sm-9 input-group repeat-input-group">
+
+								<select name="reminderMounth" class="form-control" ng-model="neweventservice.formRepeatEvent.repeatsAtMounth" ng-required="true">
+									<option value="01">January</option>
+									<option value="02">February</option>
+									<option value="03">March</option>
+									<option value="04">April</option>
+									<option value="05">May</option>
+									<option value="06">June</option>
+									<option value="07"> July</option>
+									<option value="08">August</option>
+									<option value="09">September</option>
+									<option value="10">October</option>
+									<option value="11">November</option>
+									<option value="12">December</option>
+								</select>
+							</div>
+						</div>
+						<div ng-show="neweventservice.formRepeatEvent.repeats=='1' || neweventservice.formRepeatEvent.repeats=='2'" class="form-group ">
+							<label class="col-sm-3 control-label reapet-labal-text">End date</label>
+							<div class="col-sm-9 input-group repeat-date-input-group">
+								<span class="input-group-btn ">
+                                     <button  type="button" class="btn btn-default datepicker-span repeat-end-date" ng-click="open3()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                </span>
+								<input value="{{startdate}}" type="text" class="form-control repeat-end-date" uib-datepicker-popup="dd-MM-yyyy" ng-model="neweventservice.formRepeatEvent.endEventRepeat" is-open="popup3.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+
+							</div>
+						
+
+						</div>
+
+
+						<div class="form-group ">
+							<div class="container">
+								<div class="row"></div>
+								<div class="col-md-6">
+									<!--										//https://ng-perf.com/-->
+									<div class="panel panel-default">
+										<div class="panel-heading title-repeat"> Title : <span ng-bind="neweventservice.formdata.eventtitle"></span></div>
+										<div class="panel-body repeat-info">
+										<p ><b>Description :</b><span ng-bind="neweventservice.formdata.eventdescription"></span></p>
+										<p ng-type="{{type}}" ng-model="neweventservice.formRepeatEvent.Summary" ><b>Reminder type :</b><span ng-bind="Summary"></span></p>
+										<p ng-model="neweventservice.formRepeatEvent.frequency"><b>  The frequency of the reminder :</b> <span ng-bind="frequency"></span></p>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button ngp-local-click="repeatform()" type="submit" class="submitRepeatFrom btn btn-primary btn-block">Submit</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<!--	<script type="text/javascript"></script>-->
+					<!--					<button onclick='$("#fancy-checkbox-info").prop("checked", false);' type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>

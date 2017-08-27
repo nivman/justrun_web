@@ -1,0 +1,227 @@
+
+
+<div class="form-group">
+    <label class="col-sm-3 control-label" >First Name</label >
+    <div class="col-sm-9">
+        <input type="text"
+               class="form-control"
+               name="firstname"
+               ng-model="customerObj.first_name"
+               disabled
+        />
+    </div >
+
+</div >
+
+<div class="form-group " >
+    <label class="col-sm-3 control-label" >Last Name </label >
+    <div class="col-sm-9">
+        <input type="text"
+               class="form-control"
+               name="lastname"
+               ng-model="customerObj.last_name"
+               disabled />
+    </div >
+
+</div >
+
+<div class="form-group" >
+    <label class="col-sm-3 control-label" >Gender</label >
+    <div class="col-sm-9">
+        <select name="program"
+                class="form-control"
+                ng-model="customerObj.gender"
+                disabled
+        >
+            <option value="male" >Male</option >
+            <option value="female" >Female</option >
+        </select >
+    </div >
+
+</div >
+
+<div class="form-group " >
+    <label class="col-sm-3 control-label" >Age</label >
+    <div class="col-sm-9">
+        <input type="text"
+               class="form-control"
+               name="age"
+               ng-model="customerObj.age"
+               disabled />
+    </div >
+
+</div >
+
+
+<div class="form-group " >
+    <label class="col-sm-3 control-label" >Email</label >
+    <div class="col-sm-9">
+        <input type="email"
+               class="form-control"
+               name="email"
+               ng-model="customerObj.email"
+               disabled />
+    </div >
+
+</div >
+
+<div class="form-group " >
+    <label class="col-sm-3 control-label" >Address</label >
+    <div class="col-sm-9">
+        <input type="text"
+               class="form-control"
+               name="age"
+               ng-model="customerObj.address"
+               disabled />
+    </div >
+
+</div >
+
+
+<div class="form-group " >
+    <label class="col-sm-3 control-label" > Birth Date</label >
+    <div class="col-sm-9">
+        <input type="date"
+               class="form-control"
+               name="birth_date"
+               ng-model="customerObj.birth_date"
+               disabled />
+    </div >
+
+</div >
+
+<div class="form-group " >
+    <label class="col-sm-3 control-label" > Sign Date</label >
+    <div class="col-sm-9">
+        <input type="date"
+               class="form-control"
+               name="sign_date"
+               ng-model="customerObj.sign_date"
+               disabled />
+    </div >
+
+</div >
+
+<div class="form-group" >
+    <label class="col-sm-3 control-label" > Phone Number</label >
+    <div class="col-sm-9">
+        <input type="text"
+               class="form-control"
+               name="phone_number"
+               ng-model="customerObj.phone_number"
+               disabled
+        />
+    </div >
+</div >
+
+<div class="form-group" >
+    <label class="col-sm-3 control-label" > Reference </label >
+    <div class="col-sm-9">
+        <input type="text"
+               name="ref"
+               class="form-control"
+               ng-model="customerObj.ref"
+               disabled
+        />
+    </div >
+</div >
+
+
+<div class="form-group" >
+    <label class="col-sm-3 control-label" >Porgram</label >
+    <div class="col-sm-9">
+        <input type="text"
+               name="ref"
+               class="form-control"
+               ng-model="customerObj.program"
+               disabled
+        />
+    </div >
+
+</div >
+
+<div class="form-group" >
+    <label class="col-sm-3 control-label" >Loaction</label >
+    <div class="col-sm-9">
+        <input type="text"
+               name="location"
+               class="form-control"
+               ng-model="customerObj.location"
+               disabled
+        />
+    </div >
+
+</div >
+
+
+<div class="form-group">
+    <label class="col-sm-3 control-label ">Training Days</label>
+    <div style="font-size: 11px;">
+    <input class="customer-dataform-input-days" type="checkbox"
+           ng-model="customerObj.sunday" ng-true-value="1" ng-false-value="0" ng-click="custfactory.updateTrainDay('sunday',customerObj.id,customerObj.sunday)">Sunday
+    <input class="customer-dataform-input-days" type="checkbox"
+           ng-model="customerObj.monday" ng-true-value="1" ng-false-value="0" ng-click="custfactory.updateTrainDay('monday',customerObj.id,customerObj.monday)">Monday
+    <input class="customer-dataform-input-days" type="checkbox"
+           ng-model="customerObj.tuesday" ng-true-value="1" ng-false-value="0" ng-click="custfactory.updateTrainDay('tuesday',customerObj.id,customerObj.tuesday)">Tuesday
+    <input class="customer-dataform-input-days" type="checkbox"
+           ng-model="customerObj.wednesday" ng-true-value="1" ng-false-value="0" ng-click="custfactory.updateTrainDay('wednesday',customerObj.id,customerObj.wednesday)">Wednesday
+    <input class="customer-dataform-input-days" type="checkbox"
+           ng-model="customerObj.thursday" ng-true-value="1" ng-false-value="0" ng-click="custfactory.updateTrainDay('thursday',customerObj.id,customerObj.thursday)">Thursday
+    <input class="customer-dataform-input-days"  type="checkbox"
+           ng-model="customerObj.friday" ng-true-value="1" ng-false-value="0" ng-click="custfactory.updateTrainDay('friday',customerObj.id,customerObj.friday)">Friday
+    <input class="customer-dataform-input-days" type="checkbox"
+           ng-model="customerObj.saturday" ng-true-value="1" ng-false-value="0" ng-click="custfactory.updateTrainDay('saturday',customerObj.id,customerObj.saturday)">Saturday
+    </div>
+</div>
+
+
+<div class="form-group" >
+    <label class="col-sm-3 control-label" ></label >
+    <div class="row col-sm-10 swich-customer-bottom-form">
+        <div class="col-md-2">
+            <div class="col-sm-3 control-label" id="active-customer">
+                <input ng-model="customerObj.active" type="checkbox" id="active-customer-l" class="checkbox switcher" ng-true-value="1" ng-false-value="0" checked disabled>
+                <label for="active-customer-l">
+                    <p class="active-customer-p">Active</p>
+                </label>
+                <label for="active-customer-l">
+                    <p class="active-customer-p"> Active</p>
+                </label>
+            </div>
+
+        </div >
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <div class="col-sm-3 control-label" id="trx-customer">
+                <input ng-model="customerObj.trx" type="checkbox" id="trx-customer-l" class="checkbox switcher" ng-true-value="1" ng-false-value="0" checked disabled>
+                <label for="trx-customer-l">
+                    <p class="trx-customer-p">TRX</p>
+                </label>
+                <label for="trx-customer-l">
+                    <p class="trx-customer-p">TRX</p>
+                </label>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <div class="col-sm-3 control-label" id="facebook-customer">
+                <input ng-model="customerObj.facebook" type="checkbox" id="facebook-customer-l" class="checkbox switcher" ng-true-value="1" ng-false-value="0" checked disabled>
+                <label for="facebook-customer-l">
+                    <p class="facebook-customer-p">Facebook</p>
+                </label>
+                <label for="facebook-customer-l">
+                    <p class="facebook-customer-p">Facebook</p>
+                </label>
+            </div>
+        </div>
+
+    </div >
+</div >
+
+
+<div class="buttons" >
+    <button  class="btn btn-primary btn-block form-control edit-customer-details-form pull-right" type="submit" disabled>Save</button >
+
+
+</div >
+

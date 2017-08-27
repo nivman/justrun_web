@@ -1,0 +1,46 @@
+
+<div class="container-fluid" ng-init="init()">
+    <button class="btn btn-primary  btn-enter button-enter-new-benefit"
+            ng-click="showmodal()" style="left:20%">New Award
+    </button >
+
+    <form  class="search-form form-inline" >
+
+    <div class="row customer-table"  style="position: absolute; left:20%">
+        <div class="panel panel-primary main-panel-benefits" >
+            <div class="panel-heading benefits-heading">
+               Awards                    <div class="pull-left">
+            </div>
+            </div>
+
+            <table class="table table-benefits" infinite-scroll="benefits.loadMore()" >
+                <thead>
+                <tr class="tableheader-benefits">
+                    <th class="tableheader-benefits-td">Name</th>
+                    <th class="tableheader-benefits-td">Award Name</th>
+                    <th class="tableheader-benefits-td">Expiry Date</th>
+                    <th class="tableheader-benefits-td">Used Date</th>
+                    <th class="tableheader-benefits-td">Award Value</th>
+					<th class="tableheader-benefits-td">Update</th>
+					<th class="tableheader-benefits-td">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="benefit in benefits.benefitssarr track by $index">
+                    <td>{{benefit.client_name}}</td>
+                    <td>{{benefit.benefit_name}}</td>
+                    <td>{{benefit.expire_date|date:'MM-dd-yyyy'}}</td>
+                    <td>{{benefit.used_date|date:'MM-dd-yyyy'}}</td>
+                    <td class="tableheader-benefits-total-tr">{{benefit.total}}$</td>
+                    <td><span ng-click="update(benefit,benefit.id,benefit.benefit_name,benefit.total,benefit.expire_date,benefit.used_date,benefit.client_name,$index)" class="update-benefits-table"></span></td>
+                    <td><span class="trash-benefits-table" ng-click="benefits.deleteBenefit(benefit.id,$index,benefit.benefit_name)"></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="loading" ng-show ="benefits.isloading || benefits.isdeleting" style="position: absolute">
+            <span>{{benefits.loadingtext}}</span><md-progress-circular md-mode="indeterminate" style="margin: auto" md-diameter="100"></md-progress-circular>
+        </div>
+    </div>
+</form>
+</div>

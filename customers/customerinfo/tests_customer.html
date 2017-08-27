@@ -1,0 +1,50 @@
+<div class="form-group ">
+    <table class="table table-test" >
+        <thead>
+        <tr class="tableheader-friends">
+            <th class="ticked-used">Date</th>
+            <th>Time</th>
+            <th>Distance</th>
+            <th class="remove-benfit">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="test in custfactory.testsarr">
+            <td class="">{{test.test_date|date:"dd-MM-yyyy"}}</td>
+            <td class="">{{test.time}}</td>
+            <td class="">{{test.distance}}</td>
+            <td class="friend-customers"><img src="http://justrun.site/images/trash.svg" class="trash-customers-friend-file" ng-click="deleteTest(test.id,$index)"/></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="form-group" >
+    <label class="col-sm-3 control-label" >Date:</label >
+    <div class="col-sm-9">
+        <input type="date"
+               class="form-control"
+               name="test_date"
+               ng-model="custfactory.form_data_test.test_date"
+               required />
+    </div >
+
+</div >
+
+<div class="form-group " >
+    <label class="col-sm-3 control-label" >Time</label >
+    <div class="col-sm-9">
+        <input type="text" class="form-control"  ng-model="custfactory.form_data_test.time" required />
+    </div>
+</div>
+<div class="form-group " >
+    <label class="col-sm-3 control-label" >Distance</label >
+    <div class="col-sm-9">
+        <input type="text" class="form-control"  ng-model="custfactory.form_data_test.distance" required />
+    </div>
+</div>
+
+<div class="buttons" >
+    <button class="btn btn-primary btn-block form-control edit-customer-details-form" type="submit" ng-click="custfactory.createNewTest(customerObj.id)" >Save</button >
+</div>
+

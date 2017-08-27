@@ -1,0 +1,6 @@
+[12-Apr-2017 06:40:03 Etc/GMT] PHP Warning:  require(../functions/jwt.php): failed to open stream: No such file or directory in /home/nimadral/public_html/justrun/login/signuplink.php on line 2
+[12-Apr-2017 06:40:03 Etc/GMT] PHP Warning:  require(../functions/jwt.php): failed to open stream: No such file or directory in /home/nimadral/public_html/justrun/login/signuplink.php on line 2
+[12-Apr-2017 06:40:03 Etc/GMT] PHP Fatal error:  require(): Failed opening required '../functions/jwt.php' (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/nimadral/public_html/justrun/login/signuplink.php on line 2
+[12-Apr-2017 06:46:30 Etc/GMT] PHP Warning:  require(../functions/jwt.php): failed to open stream: No such file or directory in /home/nimadral/public_html/justrun/login/signuplink.php on line 2
+[12-Apr-2017 06:46:30 Etc/GMT] PHP Warning:  require(../functions/jwt.php): failed to open stream: No such file or directory in /home/nimadral/public_html/justrun/login/signuplink.php on line 2
+[12-Apr-2017 06:46:30 Etc/GMT] PHP Fatal error:  require(): Failed opening required '../functions/jwt.php' (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/nimadral/public_html/justrun/login/signuplink.php on line 2

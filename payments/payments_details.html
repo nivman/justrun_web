@@ -1,0 +1,47 @@
+<div id="paymentdetails"
+     class="modal"
+     role="dialog" >
+    <div class="modal-dialog" >
+        <div class="modal-content model-content-payments" >
+            <div class="modal-header model-header-payments" >
+                <button type="button" class="close pull-left" ng-click="hideDetailsModal()" >&times;</button >
+                <h4 class="modal-title model-title-payments">Update </h4 >
+            </div >
+            <div class="modal-body" >
+                <form
+                      class="form-horizontal"
+                      novalidate >
+                    <div class="form-group">
+                        <div class="pull-right col-sm-6"><label>Customer:</label ></div>
+                        <div>
+                            <input type="text" ng-model="payments.formdatadetails.client_name" disabled>
+                        </div>
+                    </div>
+                    <table class="table table-payments-updated">
+                        <thead>
+                        <tr class="tableheader-benefits">
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>For </th>
+                            <th>Receipt Type</th>
+                            <th>Paid?</th>
+                            <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="detail in detailsarray|orderBy|byear:payments.year_chosen:'-payment_date' track by $index">
+                            <td>{{detail.payment_date|date:'MM-dd-yyyy'}}</td>
+                            <td>{{detail.payment_type}}</td>
+                            <td>{{detail.payment_for}}</td>
+                            <td>{{detail.receipt_type}}</td>
+                            <td><input type="checkbox" ng-model="detail.is_paid" ng-true-value="1" ng-false-value="0" disabled></td>
+                            <td>{{detail.total}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form >
+            </div >
+        </div >
+
+    </div >
+</div >

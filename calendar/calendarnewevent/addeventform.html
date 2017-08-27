@@ -1,0 +1,121 @@
+<form ng-guid="{{guid}}" ng-eventId="{{eventId}}" ng-insertMode="{{insertMode}}" id="dialogContainer" ng-model="neweventservice.formdata.insertMode" ng-submit="neweventservice.submit()">
+
+	<div id="check_overlaping">
+		<div layout="row" layout-sm="column" layout-align="space-around">
+			<md-progress-circular md-mode="indeterminate"></md-progress-circular>
+			<h5>Saving reminder</h5>
+		</div>
+	</div>
+
+	<div class="form-group event-from-calendar">
+		<label id="event-title" class="">Event name </label>
+		<div class="col-sm-9 input-group eventfrom">
+
+			<input type="text" class="form-control" name="eventtitle" ng-model="neweventservice.formdata.eventtitle" placeholder="title" required />
+
+		</div>
+	</div>
+	<div class="form-group event-from-calendar">
+		<label id="event-description" class=""> Event Description</label>
+		<div class="col-sm-9 input-group eventfrom">
+
+			<textarea type="text" class="form-control" name="eventdescription" ng-model="neweventservice.formdata.eventdescription" placeholder="Enter description" />
+		</div>
+	</div>
+	<div class="form-group event-from-calendar">
+		<label class=" control-label date-label">Start Date</label>
+		<div class="col-sm-9 input-group eventfrom-date">
+			<span class="input-group-btn ">
+            <button  type="button" class="btn btn-default datepicker-span" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+			<input datepicker-options="dateOptions" uib-datepicker-popup="dd-MM-yyyy" ng-disabled="neweventservice.formdata.guid!=null" current-textinlineOptions type="text" class="form-control" is-open="popup1.opened" ng-required="true" close-text="Close" placeholder={{startdate}} alt-input-formats="altInputFormats" ng-model="neweventservice.formdata.eventstartdate" />
+
+		</div>
+	</div>
+	<div class="form-group event-from-calendar">
+		<label class="control-label date-label">End Date</label>
+		<div class="col-sm-9 input-group eventfrom-date">
+			<span class="input-group-btn ">
+            <button type="button" class="btn btn-default datepicker-span" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+			<input ng-disabled="neweventservice.formdata.guid!=null" type="text" class="form-control" uib-datepicker-popup="dd-MM-yyyy" ng-model="neweventservice.formdata.eventenddate" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder={{startdate}} alt-input-formats="altInputFormats" />
+		</div>
+	</div>
+
+	<div class="form-group event-from-calendar-time-start">
+		<label class=" control-label lable-title date-label-time">Beginning time</label>
+		<div class="input-group timepic timepicker-start">
+			<uib-timepicker id="input-date-picker" ng-model="neweventservice.formdata.eventstarthour" ng-change="changed()" show-meridian="!ismeridian"></uib-timepicker>
+		</div>
+	</div>
+	<div class="form-group event-from-calendar-time-end">
+		<label class="control-label lable-title date-label-time">End time</label>
+		<div class="input-group timepic timepicker-start">
+			<uib-timepicker ng-model="neweventservice.formdata.eventendhour" ng-change="changed()" show-meridian="!ismeridian"></uib-timepicker>
+		</div>
+	</div>
+	<ul id="all-day-repeat-wrapper">
+		<li class="pull-left li-left">
+			<div class="form-group mainform event-from-calendar" id="allday">
+				<input type="checkbox" name="allDay" id="fancy-checkbox-primary" autocomplete="off" ng-model="neweventservice.formdata.allday" />
+				<div class="btn-group">
+					<label for="fancy-checkbox-primary" class="btn btn-primary calendar-full-day">
+						<span class="glyphicon glyphicon-ok"></span>
+						<span> </span>
+					</label>
+					<label for="fancy-checkbox-primary" class="btn btn-default calendar-full-day-line">
+						 All day
+					</label>
+				</div>
+			</div>
+		</li>
+		<li class="pull-right li-right">
+			<div class="form-group mainform event-from-calendar" id="repeat">
+				<input ng-disabled="neweventservice.formdata.guid!=null" ng-click="checkFormValidationForRepeat()" type="button" name="repeatFormShow" id="fancy-checkbox-info" autocomplete="off" data-toggle="modal" ng-model="neweventservice.formdata.repeatFrom" data-target="#repeatModal" />
+				<div class="btn-group">
+					<label for="fancy-checkbox-info" class="btn btn-info event-repeat">
+						 Recurring event
+					</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div class="form-group event-from-calendar-user">
+		<label class="col-sm-3 control-label date-username">Username</label>
+		<div class="col-sm-9 input-group eventfrom">
+			<select ng-options="item.text for item in neweventservice.formdata.names track by item.name" ng-userName="{{username}}" name="username" class="form-control" ng-model="neweventservice.formdata.username" ng-required="true">
+			</select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group event-from-calendar-reminder-selector">
+			<div class="col-sm-3 control-label" id="reminder">
+				<input ng-change="openemailbox()" type="checkbox" name="allDay" id="fancy-checkbox-default" autocomplete="off" ng-model="neweventservice.formdata.reminder" />
+				<div class="btn-group">
+					<label for="fancy-checkbox-default" class="btn btn-default calendar-reminder-checkbox">
+						<span class="glyphicon glyphicon-ok"></span>
+						<span> </span>
+					</label>
+					<label for="fancy-checkbox-default" class="btn btn-default calendar-full-day-line">
+						Alert
+					</label>
+				</div>
+			</div>
+			<div class="col-sm-9 input-group eventfrom-reminder-time">
+				<select ng-disabled="neweventservice.formdata.reminder!=true" name="reminder" class="form-control" ng-model="neweventservice.formdata.selecetreminder" ng-required="true">
+					<option value="1">Hour</option>
+					<option value="2">Two hours</option>
+					<option value="4">Four hours</option>
+					<option value="6">Six hours</option>
+					<option value="8">Eight hours</option>
+					<option value="24">Day before</option>
+				</select>
+				<p ng-show="alertmail==true" name="targetmail" id="targetmail" ng-model="neweventservice.formdata.targetmail">A reminder will be sent: {{targetmail}}</p>
+			</div>
+			
+		</div>
+	</div>
+	<!--	<script type="text/javascript"></script>-->
+   	<input id="submit" class="btn btn-primary btn-block" value="Save" type="submit"/>
+	<ng-include src="'calendar/calendarnewevent/repeat.html'"></ng-include>
+</form>

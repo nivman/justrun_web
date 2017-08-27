@@ -1,0 +1,122 @@
+
+<div id="newpayment" class="modal" role="dialog" ng-controller="PaymentsController">
+	<div class="modal-dialog">
+		<div class="modal-content payment-new-enter-from">
+			<div class="modal-header payment-new-enter-from-header">
+				<button type="button" class="close pull-left" ng-click="hideModal()">&times;</button>
+				<h4 class="modal-title payment-new-enter-from-title">New Payment</h4 >
+            </div >
+            <div class="modal-body"   >
+                <form
+                        class="form-horizontal"
+                        novalidate >
+                    <div class="form-group">
+                        <div class="pull-left col-sm-6"><label>Choose Customer:</label ></div>
+                        <div>
+
+                            <input type="text" ng-model="payments.formdata.selected"
+                                   placeholder="Choose Customer" uib-typeahead="payment as payment.name for payment in paymentsautoarr | filter:{name:$viewValue}"
+                                   class="form-control"  typeahead-min-length="0"  my-enter="addFromEnter()" typeahead-on-select="OnSelect($item, $model, $label, $event)" typeahead-select-on-blur="false" mousewheel="false"
+                                   ng-change="payments.TempCustomer('fixed')">
+                        </div>
+                    </div>
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >Enter Temporary Customer</label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="nametemp"
+                                   ng-model="payments.formdata.tempname"
+                                   ng-change="payments.TempCustomer('temp')"
+                            />
+                        </div >
+                    </div >
+                    <div class="form-group" ng-if="payments.isCustTemp">
+                        <label class="col-sm-3 control-label" >Phone Number</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="phonenumber" ng-model="payments.formdata.phonetemp"  required />
+                        </div>
+                    </div>
+
+                    <div class="form-group" >
+                        <label class="col-sm-3 control-label" >Date:</label >
+                        <div class="col-sm-9">
+                            <input type="date"
+                                   class="form-control"
+                                   name="payment_date"
+                                   ng-model="payments.formdata.payment_date"
+                                   required />
+                        </div >
+
+                    </div >
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" >Type</label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="payment_type"
+                                   ng-model="payments.formdata.payment_type"
+                                   required
+                            />
+                        </div >
+                    </div >
+
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >For </label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="payment_for"
+                                   ng-model="payments.formdata.payment_for"
+                                   required />
+                        </div >
+                    </div >
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" > Receipt Type</label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="receipt_type"
+                                   ng-model="payments.formdata.receipt_type"
+                                   required
+                            />
+                        </div >
+                    </div >
+
+                    <div class="form-group" >
+								<div class="control-label col-xs-6 col-md-6" id="is-it-payed">
+								<input ng-model="payments.formdata.is_paid" type="checkbox" id="payed" class="switcher">
+									<label for="payed">
+										<p class="payed-p">Paid?</p>
+									</label>
+									<label for="payed">
+									<p class="payed-p">Paid?</p>
+									</label>
+						</div>
+
+                    </div >
+
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >total</label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="total"
+                                   ng-model="payments.formdata.total"
+                                   required />
+                        </div >
+                    </div >
+
+                    <div class="buttons form-group" >
+                        <button class="btn btn-success btn-block save-new-payment-enter-button" ng-click="payments.createNewPayment()">Save</button >
+
+                    </div >
+
+                </form >
+            </div >
+        </div >
+
+    </div >
+</div >

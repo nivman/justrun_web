@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link href="http://justrun.site/images/justrun.png" rel="icon" type="image/x-icon" />
+	<title>just run</title>
+	<link href="./css/bootstrap.css" rel="stylesheet">
+	<link href="./css/bootstrap-additions/dist/bootstrap-additions.min.css" rel="stylesheet"> 
+	<link href="./js/angularjs-toaster/toaster.min.css" rel="stylesheet">
+	<link href="./css/main.css" rel="stylesheet">
+	<link href="./login/login.css" rel="stylesheet">
+	<link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+	<link href="./css/bootstrap-rtl.css" rel="stylesheet">
+	<link href="./css/wickedpicker.min.css" rel="stylesheet">
+	<link href="scripts/directives/sidebar/sidebar.css" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+<!--	<link rel="stylesheet" href=" bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />-->
+
+	<link href="./calendar/calendar.css" rel="stylesheet">
+	<link href="./tickets/tickets.css" rel="stylesheet"/>
+	<link href="./benefits/benefits.css" rel="stylesheet"/>
+	<link href="./payments/payments.css" rel="stylesheet"/>
+	<link href="bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/bootstrap-additions/dist/bootstrap-additions.min.css">
+	<link rel="stylesheet" href="bower_components/angular-motion/dist/angular-motion.min.css">
+	<link href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.min.css" rel="stylesheet">
+	<link href="bower_components/ng-ckeditor/ng-ckeditor.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+	<link rel="stylesheet" href="bower_components/AngularJS-Toaster/toaster.min.css">
+	<link rel="stylesheet" href="customers/customerinfo/css/customerinfo.css">
+	<link rel="stylesheet" href="bower_components/v-accordion/dist/v-accordion.css">
+
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="./js/angular.min.js"></script>
+	<script src="./js/angular-locale_he_il.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-cookies.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+	<script src="./bower_components/angular-material/angular-material.js"></script>
+	<script src="./js/angularjs-toaster/toaster.min.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/justrun.js"></script>
+	<script src="./js/metisMenu.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="./js/wickedpicker.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.js"></script>
+	<script> //this is a fix for loadash lab.
+		_.contains = _.includes;
+	</script>
+
+	<!-- bower componetes -->
+	<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="bower_components/AngularJS-Toaster/toaster.min.js"></script>
+	<script src="bower_components/angular-ahdin/dist/angular-ahdin.js"></script> <!-- used in customerinfo -->
+	<script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
+	<script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+	<script src="bower_components/moment/min/moment.min.js"></script>
+	<script src="node_modules/ng-infinite-scroll/build/ng-infinite-scroll.min.js"></script>
+	<script src="bower_components/ngstorage/ngStorage.min.js"></script>
+	<script src="bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+	<script src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
+	<script src="bower_components/fullcalendar/dist/gcal.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="bower_components/fullcalendar/dist/lang/he.js"></script>
+
+<!--  	<script  src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" type="text/javascript" ></script>-->
+
+    <script src="bower_components/angular-dateParser/dist/angular-dateparser.min.js"></script>
+    <script src="bower_components/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-svg-round-progressbar/build/roundProgress.js"></script> <!-- used in customerinfo -->
+    <script src="bower_components/angularjs-dropdown-multiselect/src/angularjs-dropdown-multiselect.js"></script>
+	<script src="bower_components/ng-ckeditor/ng-ckeditor.min.js"></script> <!-- used in email edior -->
+	<script src="bower_components/v-accordion/dist/v-accordion.min.js"></script> <!-- used in customerinfo -->
+	<script src="bower_components/angular-file-saver/dist/angular-file-saver.bundle.js"></script>
+
+
+    <!--scripts -->
+	<script src="//cdn.ckeditor.com/4.5.9/full/ckeditor.js"></script>
+
+
+    <!--directives-->
+    <script src="scripts/directives/header/header.js"></script>
+    <script src="scripts/directives/header/header-notification/header-notification.js"></script>
+    <script src="scripts/directives/sidebar/sidebar.js"></script>
+
+    <!-- controllers -->
+	<script src="./scripts/controllers/mainctrl.js"></script>
+	<script src="customers/customers.js"></script>
+	<script src="customers/customerinfo/customerinfo.ctrl.js"></script>
+	<script src="./login/loginctrl.js"></script>
+	<script src="./scripts/controllers/dashboardctrl.js"></script>
+	<script src="./tickets/ticketsctrl.js"></script>
+	<script src="./benefits/benefitsctrl.js"></script>
+	<script src="./calendar/calendar.ctrl.js"></script>
+	<script src="./calendar/calendar.eventform.js"></script>
+	<script src="./calendar/calendar.service.js"></script>
+	<script src="./calendar/calendardetails.js"></script>
+	<script src="./payments/paymentsctrl.js"></script>
+	<script src="trx/trxctrl.js"></script>
+	<script src="trx/form/trxformctrl.js"></script>
+	<script src="trx/form/neweventctrl.js"></script>
+	<script>
+		if (navigator.userAgent.match(/Macintosh/) && navigator.userAgent.match(/Chrome/)) {
+			$('head').append('<link rel="stylesheet" type="text/css" href="./trx/trx_mac.css">');
+		} else {
+			$('head').append('<link rel="stylesheet" type="text/css" href="./trx/trx.css">');
+		}
+	</script>
+</head>
+
+
+<body id="bootstrap-overrides" ng-app="justrun">
+
+	<div id="main-container" class="container-fullwidth">
+		<div id="inner-container" ui-view></div>
+
+	</div>
+	<script>
+		function closeNevBarOnClick() {
+			$('.sidebar-buttons').click(function () {
+			if ($('.navbar-toggle').css('display') != 'none') {
+					$(".navbar-toggle").trigger("click");
+				}
+			});
+		}
+		function doOnOrientationChange() {
+			var orientation = window.screen.orientation;
+			switch (orientation.type) {
+			case "landscape-primary":
+				
+				$(".table-main-cutomer").css("table-layout", "auto");
+				$(".table-main-cutomer>tbody>tr>td").css("border", "none");
+//					var paymentTable =$(".panel-payments-main")
+//				
+					$("#block-massage").css("display","none");
+					$(".paymant-table").css("display","block");
+						$(".payment-wrapper").css("display","block");
+					var screenWidth = 	screen.width
+					if(screenWidth<720)
+						{
+							var paymentMonthName =jQuery(".payment-month-name");
+							for(i=0;i<paymentMonthName.length;i++)
+								{
+									var monthName = jQuery(paymentMonthName[i]).text().slice(0, 3);
+									jQuery(paymentMonthName[i]).text(monthName);
+								}
+							$(".paymant-month-col-name-private").text("פרטי");
+						
+						}
+				break;
+			case "portrait-primary":
+				
+				$(".table-main-cutomer>tbody>tr>td").css("border", "1px dotted silver");
+				$(".table-main-cutomer").css("table-layout", "fixed");
+//					var paymentTable =$(".panel-payments-main")
+//					if(paymentTable.length>0)
+//						{
+//						
+							$(".paymant-table").css("display","none");
+						$(".payment-wrapper").css("display","none");
+							$("#block-massage").css("display","block");
+//				
+//						}
+				break;
+			}
+		}
+		window.addEventListener('orientationchange', doOnOrientationChange);
+		$(document).ready(function () {
+			setTimeout(function () {
+				closeNevBarOnClick();
+				doOnOrientationChange();
+			}, 500);
+		});
+	</script>
+</body>
+
+</html>

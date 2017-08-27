@@ -1,0 +1,171 @@
+<div class="container-fluid" ng-init="initCustomer()">
+    <div class="row">
+        <div class="col-lg-12">
+            <button class="btn btn-primary  form-control customer-back-button" ng-click="goToCustomers()"
+            >Back to Customers
+            </button >
+            <h1 class="customer-info-header page-header">Customer Details</h1>
+        </div>
+    </div>
+</div>
+    <div class="row">
+		<div class="col-lg-4" ></div>
+        <div class="col-lg-4" style="left:10%" >
+         <img  id="custimage"   ng-src="{{image}}" ngf-resize="{width:1000,height:1000,quality:0.5}" ngf-select="uploadimage($file)" ng-model="image" name="file" ngf-pattern="'image/*'"
+            ngf-accept="'image/*'" ngf-max-size="20MB">
+        </div>
+        <round-progress
+                max="progress_image.max"
+                ng-if="progress_image.show"
+                current="progress_image.Percentage"
+                color="#45ccce"
+                bgcolor="#eaeaea"
+                radius="100"
+                stroke="20"
+                semi="true"
+                rounded="true"
+                clockwise="false"
+                responsive="false"
+                duration="800"
+                animation="easeInOutQuart"
+                animation-delay="0"></round-progress>
+		<div class="col-lg-4" ></div>
+    </div>
+
+<div class="row">
+    <div style="left:10%" >
+    <div class="col-lg-5 col-sm-12" style="left:19%">
+        <div class="panel panel-default panel-customer-details">
+            <div class="panel-heading clearfix panel-customer-details-heading">
+                Details
+            </div>
+            <div class="panel-body panel-customer-body-heading">
+                <form   ng-submit="updateCustomer()"
+                      class="form-horizontal"
+                      novalidate >
+                    <ng-include src="'customers/customerinfo/dataform_customer.html'" ></ng-include >
+                </form >
+				 <button class="btn btn-primary btn-block form-control pull-left edit-customer-details-form allways-enable" ng-click="enableForm()" enabled>Edit </button >
+				
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-6 col-sm-12" style="left:19%">
+    <v-accordion id="my-accordion" class="vAccordion--default" multiple control="accordion" onexpand="expandCallback(index, id)" oncollapse="collapseCallback(index, id)">
+        <v-pane id="comments">
+            <v-pane-header>
+                <div class="panel-heading clearfix panel-customer-details-heading">Notes<span ng-class=vpaneClass.comments></span></div>            </v-pane-header>
+            <v-pane-content class="vpn-goals">
+                    <div class="panel panel-default panel-customer-details-vpn fill-up">
+                        <div class="panel-body panel-customer-body-heading">
+                            <form   ng-submit="updateCustomer()"
+                                    class="form-horizontal"
+                                    novalidate >
+                                <ng-include src="'customers/customerinfo/comment_customer.html'" ></ng-include >
+                            </form >
+                        </div>
+                    </div>
+            </v-pane-content>
+        </v-pane>
+
+
+
+            <v-pane id="goals" >
+                <v-pane-header>
+                    <div class="panel-heading clearfix panel-customer-details-heading"><span ng-class=vpaneClass.goals></span>Goals</div>
+                </v-pane-header>
+                <v-pane-content class="vpn-goals">
+                    <div class="panel panel-default panel-customer-details-vpn fill-down">
+                        <div class="panel-body panel-customer-body-heading">
+                            <form   ng-submit="" class="form-horizontal"
+                                    novalidate >
+                                <ng-include src="'customers/customerinfo/goals_customer.html'" ></ng-include >
+                            </form >
+                        </div>
+                    </div>
+                </v-pane-content>
+            </v-pane>
+
+
+
+
+                <v-pane id="friends">
+                    <v-pane-header>
+                       <div class="panel-heading clearfix panel-customer-details-heading"> <span ng-class=vpaneClass.friends></span> Friends Brought  </div>
+                    </v-pane-header>
+                    <v-pane-content class="vpn-goals">
+                                <div class="panel panel-default panel-customer-details-vpn fill-up">
+                                    <div class="panel-body panel-customer-body-heading">
+                                        <form   ng-submit=""
+                                                class="form-horizontal"
+                                                novalidate >
+                                            <ng-include src="'customers/customerinfo/customers_friends.html'" ></ng-include >
+                                        </form >
+                                    </div>
+                                </div>
+                    </v-pane-content>
+                </v-pane>
+
+
+
+                    <v-pane id="files" >
+                        <v-pane-header>
+
+                            <div class="panel-heading clearfix panel-customer-details-heading "><span ng-class=vpaneClass.files></span>Files-Disabled in Demo</div>                        </v-pane-header>
+                        <v-pane-content class="vpn-goals">
+                            <div class="panel panel-default panel-customer-details-vpn ">
+                                <div class="panel-body panel-customer-body-heading">
+                                    <form   ng-submit=""
+                                            class="form-horizontal"
+                                            novalidate >
+                                        <ng-include src="'customers/customerinfo/files_customer.html'" ></ng-include >
+                                    </form >
+                                </div>
+                            </div>
+                        </v-pane-content>
+                    </v-pane>
+
+
+
+                        <v-pane id="payments">
+                            <v-pane-header>
+
+                                <div class="panel-heading clearfix panel-customer-details-heading"> <span ng-class=vpaneClass.payments></span> Payments - {{custfactory.total_payment}}$  </div>                        </v-pane-header>
+                            <v-pane-content class="vpn-goals">
+                                        <div class="panel panel-default panel-customer-details-vpn">
+                                            <div class="panel-body panel-customer-body-heading">
+                                                <form
+                                                        class="form-horizontal"
+                                                        novalidate >
+                                                    <ng-include src="'customers/customerinfo/payments_customer.html'" ></ng-include >
+                                                </form >
+                                            </div>
+                                        </div>
+                            </v-pane-content>
+                        </v-pane>
+
+
+
+                            <v-pane id="tests">
+                                <v-pane-header>
+                                    <div class="panel-heading clearfix panel-customer-details-heading"><span ng-class=vpaneClass.tests></span>Tests</div>  </v-pane-header>
+                                <v-pane-content class="vpn-goals">
+                                        <div class="panel panel-default panel-customer-details-vpn">
+                                            <div class="panel-body panel-customer-body-heading">
+                                                <form
+                                                        class="form-horizontal"
+                                                        novalidate >
+                                                    <ng-include src="'customers/customerinfo/tests_customer.html'" ></ng-include >
+                                                </form >
+                                            </div>
+                                        </div>
+                                </v-pane-content>
+                            </v-pane>
+
+                    </v-accordion>
+
+</div>
+</div>
+</div>

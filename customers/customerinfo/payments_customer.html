@@ -1,0 +1,23 @@
+<div class="form-group ">
+    <table class="table table-condensed" infinite-scroll="custfactory.loadMore()" >
+        <thead>
+        <tr class="tableheader">
+            <th >Payment Type</th>
+            <th >Payment for</th>
+            <th >Payment date </th>
+            <th > Paid?</th>
+            <th >Amount</th>
+        </tr>
+        </thead>
+        <tbody class="tbody-Payment-customer">
+        <tr ng-repeat="payment in custfactory.paymentssarr" >
+            <!--track by $index-->
+                      <td style="padding-left: 46px">{{payment.payment_type}}</td>
+            <td style="padding-left: 34px">{{payment.payment_for}}</td>
+            <td style="padding-left: 46px">{{payment.payment_date|date:'dd-MM-yyyy'}}</td>
+            <td style="padding-left: 20px"> <input  type="checkbox"  ng-model="payment.is_paid"  ng-true-value="1" ng-false-value="0" disabled> </td>
+            <td style="padding-left: 26px">{{payment.total}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

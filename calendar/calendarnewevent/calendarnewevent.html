@@ -1,0 +1,31 @@
+
+
+<div id="calendarNewEvent" class="modal" role="dialog">
+
+	<div id="main-calendar-event-form" class="modal-dialog">
+
+		<div id="calender-main-contant" class="modal-content">
+			<div id="modal-headline" class="modal-header" >
+			
+				<button type="button" class="close pull-left" ng-click="hideModal()">&times;</button>
+				<h4 id="form-title-mode" class="modal-title" dir="rtl"> {{formTitle}}</h4 >
+
+			
+
+            </div>
+			<input type="button" value="TRX" id="trx-button" ng-click="changeToTrxForm()" class="swith-panel btn btn-primary">
+			<input disable type="button" value="daybook" id="trx-button"  class="swith-panel btn btn-primary disabled">
+			
+            <div id="new-event-main-body" class="modal-body main-body-new-event" >
+
+				<form class="form-horizontal" novalidate >
+                    <ng-include src="'calendar/calendarnewevent/addeventform.html'" ></ng-include >
+                </form>
+				
+            </div>
+        </div>
+    </div>
+		
+</div>
+
+

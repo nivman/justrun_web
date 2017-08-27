@@ -1,0 +1,18 @@
+<div id="customernew" class="modal" role="dialog" >
+		
+    <div class="modal-dialog" >
+		
+        <div class="modal-content new-cutomer-from-modal" >
+            <div class="modal-header new-cutomer-from-header" >
+                <button type="button" class="close pull-left" ng-click="hideModal()" >&times;</button >
+                <h4 id="model-add-new-customer-from" class="modal-title" dir="rtl">New Customer</h4 >
+            </div >
+            <div  class="modal-body new-cutomer-from-body" >
+<!--                <form ng-submit="customers.createNewCustomer()" class="form-horizontal" novalidate >-->
+                    <ng-include src="'customers/dataform.html'" ></ng-include >
+<!--                </form >-->
+            </div >
+		
+        </div >
+    </div >
+</div >

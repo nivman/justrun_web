@@ -1,0 +1,85 @@
+<div id="update_full"
+     class="modal"
+     role="dialog" >
+    <div class="modal-dialog" >
+        <div class="modal-content model-content-benefits" >
+            <div class="modal-header model-header-benefits" >
+                <button type="button" class="close pull-left" ng-click="hideUpdatedModal()" >&times;</button >
+                <h4 class="modal-title model-title-benefits" dir="rtl"> Update</h4 >
+            </div >
+            <div class="modal-body" >
+                <form ng-submit="payments.updatePayment_Full()"
+                      class="form-horizontal"
+                      novalidate >
+                    <div class="form-group">
+                        <div>
+                            <input type="text" ng-model="payments.formdataupdated_full.client_name"
+                                   placeholder="Choose Customer"
+                                   class="form-control"  disabled>
+                        </div>
+                    </div>
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >Type </label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="payments_type"
+                                   ng-model="payments.formdataupdated_full.payment_type"
+                                   required />
+                        </div >
+                    </div >
+
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" > For</label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="total"
+                                   ng-model="payments.formdataupdated_full.payment_for"
+                                   required />
+                        </div >
+                    </div >
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >Receipt Type </label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="total"
+                                   ng-model="payments.formdataupdated_full.receipt_type"
+                                   required />
+                        </div >
+                    </div >
+
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >Date</label >
+                        <div class="col-sm-9">
+                            <input type="date"
+                                   class="form-control"
+                                   name="expire_date"
+                                   ng-model="payments.formdataupdated_full.payment_date"
+                                   required />
+                        </div >
+
+                    </div >
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >Total</label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="total"
+                                   ng-model="payments.formdataupdated_full.total"
+                                   required />
+                        </div >
+                    </div >
+                    <div class="buttons" >
+                        <button class="btn btn-primary btn-block benefit-submit-button"
+                                type="submit" ng-click="hideUpdatedModal()"
+                        >Update
+                        </button >
+                    </div >
+                </form >
+            </div >
+        </div >
+
+    </div >
+</div >

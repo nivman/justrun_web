@@ -1,0 +1,85 @@
+<div class="form-group trx-form-group">
+	<div class="pull-left col-sm-2 number-of-training-label"><label>Select number of exercisers:</label ></div>
+	<div class="col-xs-6 col-sm-4 col-md-8">
+		<input class="input-training-number" type="text" ng-model="formData.maxcount">
+	</div>
+</div>
+
+<div class="form-group trx-form-group-edit-event-choose-trainer">
+	<div class="pull-left col-sm-6 col-md-3 choose-training-label">
+		<label>Select a Trainee:</label>
+	</div>
+	<div class="col-xs-6 col-sm-4 col-md-8">
+		<input  type="text" ng-model="formData.selected" data-ng-disabled="isTimeSet()" placeholder="Select a trainee" uib-typeahead="customer as customer.name for customer in customerobjarr | filter:{name:$viewValue}" class="form-control training-name-selector" typeahead-min-length="0" my-enter="addFromEnter()"  typeahead-show-hint="true" typeahead-select-on-blur="true"
+			   typeahead-on-select="OnSelect($item, $model, $label, $event);"  mousewheel="false"   ng-change="TempCustomer('fixed')" value="">
+	</div>
+</div>
+
+<div class="form-group trx-form-group-edit-event-choose-trainer">
+	<div class="pull-left col-sm-6 col-md-3 choose-training-label">
+		<label> Select a temporary trainee:</label >
+	</div>
+	<div class="col-xs-6 col-sm-4 col-md-6">
+		<input   type="text" class="form-control" name="name"ng-model="formData.selectedfromenter"  ng-change="TempCustomer('temp')" data-ng-disabled="isTimeSet()"/>
+		
+	</div>
+<span class="btn btn-success addTempCustommer"  ng-click="addFromUpdateEnter()" >Add</span>
+</div>
+
+<div class="form-group trx-form-group trx-form-group-hour" ng-if="isCustTemp">
+<label class="col-sm-3 control-label" >Phone</label>
+<div class="col-sm-9">
+	<input type="text" class="form-control" name="phone" ng-model="formData.phonetemp"  style="margin-top: 13px!important;" required />
+</div>
+</div>
+
+<div class="form-group trx-form-group trx-form-group-hour">
+	<label class=" col-xs-4 col-sm-3 control-label lable-title">Hour:</label>
+	<div class="col-xs-6 col-md-4 col-sm-9 input-group timepic-trx">
+		<uib-timepicker ng-model="formData.time" show-meridian="ismeridian"></uib-timepicker>
+	</div>
+</div>
+
+<div class="form-group table-wrapper-trx trx-form-group-new-event-table">
+	<table class="table trxtable">
+		<thead>
+			<tr class="tableheader">
+				<th class="customer-number-trx">#</th>
+				<th class="customer-name-trx">Name</th>
+				<th class="customer-arrival-confirmation-trx">Confirmation of Arrival</th>
+				<th class="customer-arrival-q-trx">
+					<div>Arrive?</div>
+				</th>
+				<th class="customer-payment-q-trx">
+				<div>Paid?</div>
+				</th>
+				<th class="input-trx-amount"><div id="trx-amount-header-from">Amount</div></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="customer in customers track by $index">
+				<td class="customer-detail-trx">{{$index +1}}</td>
+				<td class="customer-detail-trx-name"><div>{{customer.name}}</div></td>
+				<td class="img-container-trx"><img class="approval-trx" ng-src={{getApprovedImage(customer)}}></td>
+				<td class="input-container-trx-arrival-q">
+					<input class="customer-detail-trx-input" type="checkbox" ng-model="customer.arrived" ng-true-value="'YES'" ng-false-value="'NO'">
+				</td>
+				<td class="input-container-trx-payment-q">
+					<input class="customer-detail-trx-input" type="checkbox" ng-model="customer.paid" ng-true-value="'YES'" ng-false-value="'NO'">
+				</td>
+				<td class="input-trx-amount-td">
+					<input class="trx-amount" type="text" ng-model="customer.amount">
+				</td>
+				<td class="input-trx-trash-td">
+					<div class="trash-wrapper">
+						<span class="trx-trash" ng-click="deleteCustomer(customer)"></span>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="buttons row">
+	<span class="col-md-4 btn btn-success btn-block approval-button pull-right" ng-click="UpdateCustomer(customers)"> Confirm changes</span>
+	<span class="col-md-4 btn btn-danger btn-block disapproval-button pull-left" ng-click="deleteEvent()">Delete</span>
+</div>

@@ -1,0 +1,27 @@
+<md-dialog aria-label="update-reminder" ng-cloak>
+	<form>
+		<md-toolbar>
+			<div id="update-calendar-alert-box" class="md-toolbar-tools">
+				<h2 id="update-calendar-alert-header">Update reminder</h2>
+				<span flex></span>
+			</div>
+		</md-toolbar>
+       <p class="updateClarification"> Update saved as of date  {{eventstartdate}} </p>
+		 <p class="updateClarification">Previous reminders will not be updated</p>
+		<md-dialog-actions layout="row">
+			<md-button ng-click="answer('single')">
+               Update a single reminder  
+			</md-button>
+
+			<md-button ng-click="answer('multi')">
+                Update all reminder
+			</md-button>
+			<md-button ng-click="answer('cencel')">
+				Cencel
+			</md-button>
+		</md-dialog-actions>
+	</form>
+</md-dialog>
+
+
+   

@@ -1,0 +1,155 @@
+div#login {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #5EBDF3;
+	height: 100vh;
+	color: white;
+}
+
+div#login h2 {
+	color: white;
+}
+
+.form-signin {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -150px;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.form-signin h2 {
+	font-size: 20px;
+}
+
+.form-signup {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.form-signup .form-signup-heading,
+.form-signup.checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signup .checkbox {
+	font-weight: normal;
+}
+
+.form-signup .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.form-signup .form-control:focus {
+	z-index: 2;
+}
+
+.form-signup input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signup input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.form-signup h2 {
+	font-size: 20px;
+}
+
+#new-password-hedear {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#new-password-p {
+	text-align: center;
+	top: 8px;
+	position: relative;
+	font-weight: bold;
+}
+
+#new-password-input {
+	width: 100%;
+}
+
+#new-password-button {
+	background-color: #178acc;
+	font-size: 19px;
+	color: rgb(242, 242, 242);
+	font-weight: bold;
+	letter-spacing: 0.67px;
+	text-shadow: 4.01px 2.67px 2.67px rgba(0, 56, 81, 0.47)
+}
+
+#new-password-dialog {
+	padding-left: 8px !important;
+}
+
+#new-password-toolbar {
+	background-color: #178acc;
+	font-size: 33px;
+	color: rgb(242, 242, 242);
+	font-weight: bold;
+	text-shadow: 4.01px 2.67px 2.67px rgba(0, 56, 81, 0.47);
+}
+#forgotpassbtn-wrappar{
+	text-align: center;
+}
+#forgotpassbtn{
+	cursor: pointer;
+}
+#back-to-login-wrappar{
+	text-align: center;
+}
+#back-to-login{
+	cursor: pointer;
+}

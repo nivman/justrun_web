@@ -1,0 +1,37 @@
+<div id="birthdaynew" class="modal" role="dialog" ng-controller="headerNotificationController">
+    <div class="modal-dialog" >
+        <div class="modal-content birthday-bubble-content" >
+            <div class="modal-header birthday-bubble-header" >
+                <button type="button" class="close pull-left" ng-click="hideModal()" >&times;</button >
+                <h4 class="modal-title birthday-bubble-title">Birth Days </h4 >
+            </div >
+            <div class="modal-body"   >
+                <form
+                      class="form-horizontal"
+                      novalidate >
+                    <div class="form-group ">
+                        <table class="table table-birthday-bubble">
+                            <thead>
+                            <tr class="tableheader">
+                                <th style="width: 20%" >First Name
+                                <th >Last Name</th>
+                                <th >Birthday</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="customer in birthday.thisMonthBirthDay track by $index">
+                                <td>{{customer.first_name}}</td>
+                                <td>{{customer.last_name}}</td>
+                                <td>{{customer.birth_date|date:'MM-dd-yyyy'}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form >
+            </div >
+        </div >
+
+    </div >
+</div >
+
+

@@ -1,0 +1,43 @@
+<div class="container-fluid" ng-init="init()" >
+    <form  class="search-form form-inline" style="left:18%; position: relative" >
+
+        <div class="row customer-table" >
+            <div class="panel panel-primary main-panel-benefits" >
+                <div class="panel-heading benefits-heading">
+                    Update Welcome - Male                   <div class="pull-left ">
+                    <div class="buttons" >
+                        <span class="btn btn-success pull-left " ng-click="updateEmail('male')" >Save</span >
+                    </div >
+                </div>
+
+                    <form>
+                        <textarea ckeditor="editorOptions" ng-model="editortext.male"></textarea>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row customer-table"  style="left:18%; position: relative">
+            <div class="panel panel-primary main-panel-benefits" >
+                <div class="panel-heading benefits-heading">
+                    Update Welcome - Female                    <div class="pull-left ">
+                    <div class="buttons" >
+                        <span class="btn btn-success pull-left  " ng-click="updateEmail('female')" >Save</span >
+                    </div >
+                </div>
+
+                    <form>
+                        <textarea ckeditor="editorOptions" ng-model="editortext.female"></textarea>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+
+

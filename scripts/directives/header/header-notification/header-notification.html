@@ -1,0 +1,36 @@
+
+<ul id="main-wrapper-header-notification" class="nav navbar-top-links navbar-collapse pull-left pull-right" >
+
+<ul class="nav navbar-top-links navbar-right pull-left" ng-controller="headerNotificationController" ng-init="countBirthDays()">
+
+    <li class="dropdown header-notification-controller">
+        <a class="dropdown-toggle dropdown-header-notification-controller" data-toggle="dropdown" ng-click="showBirthDays()">
+            <i class="fa fa-birthday-notification"></i>
+            <span class="badge badge-number" >{{birthdayscount}}</span>
+        </a>
+        <!-- /.dropdown-alerts -->
+    </li>
+    <!-- /.dropdown -->
+    <li class="dropdown header-notification-controller" >
+        <a class="dropdown-toggle dropdown-header-notification-controller" data-toggle="dropdown">
+            <i class="logout-icon"></i>
+        </a>
+        <ul id="drop-down-user" class="dropdown-menu dropdown-user">
+<!--
+            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+            </li>
+            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+            </li>
+            <li><a href="http://www.strapui.com/"><i class="fa fa-eye fa-fw"></i> Premium Angular Themes</a></li>
+-->
+			
+<!--            <li class="divider"></li>-->
+            <li><a id="logOut" ng-click="logout()"><i class="fa fa-sign-out fa-fw"></i> Log Out </a>
+            </li>
+        </ul>
+        <!-- /.dropdown-user -->
+    </li>
+    <!-- /.dropdown -->
+</ul>
+
+</ul>

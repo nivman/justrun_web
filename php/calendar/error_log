@@ -1,0 +1,16 @@
+[04-Jan-2017 12:39:52 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[04-Jan-2017 12:39:53 America/Chicago] PHP Notice:  Array to string conversion in /home1/justrun/public_html/php/functions/jwt.php on line 59
+[04-Jan-2017 14:08:45 America/Chicago] PHP Notice:  Undefined property: stdClass::$title in /home1/justrun/public_html/php/calendar/createnewevent.php on line 10
+[04-Jan-2017 14:08:45 America/Chicago] PHP Notice:  Undefined property: stdClass::$description in /home1/justrun/public_html/php/calendar/createnewevent.php on line 11
+[04-Jan-2017 14:08:45 America/Chicago] PHP Notice:  Undefined property: stdClass::$username in /home1/justrun/public_html/php/calendar/createnewevent.php on line 14
+[04-Jan-2017 14:08:45 America/Chicago] PHP Notice:  Undefined property: stdClass::$eventId in /home1/justrun/public_html/php/calendar/createnewevent.php on line 16
+[04-Jan-2017 14:08:45 America/Chicago] PHP Notice:  Undefined property: stdClass::$repeatevent in /home1/justrun/public_html/php/calendar/createnewevent.php on line 17
+[04-Jan-2017 14:08:45 America/Chicago] PHP Notice:  Undefined property: stdClass::$reminder in /home1/justrun/public_html/php/calendar/createnewevent.php on line 18
+[04-Jan-2017 14:08:45 America/Chicago] PHP Notice:  Undefined property: stdClass::$mailtoreminder in /home1/justrun/public_html/php/calendar/createnewevent.php on line 19
+[04-Jan-2017 14:09:29 America/Chicago] PHP Notice:  Undefined property: stdClass::$title in /home1/justrun/public_html/php/calendar/createnewevent.php on line 10
+[04-Jan-2017 14:09:29 America/Chicago] PHP Notice:  Undefined property: stdClass::$description in /home1/justrun/public_html/php/calendar/createnewevent.php on line 11
+[04-Jan-2017 14:09:29 America/Chicago] PHP Notice:  Undefined property: stdClass::$username in /home1/justrun/public_html/php/calendar/createnewevent.php on line 14
+[04-Jan-2017 14:09:29 America/Chicago] PHP Notice:  Undefined property: stdClass::$eventId in /home1/justrun/public_html/php/calendar/createnewevent.php on line 16
+[04-Jan-2017 14:09:29 America/Chicago] PHP Notice:  Undefined property: stdClass::$repeatevent in /home1/justrun/public_html/php/calendar/createnewevent.php on line 17
+[04-Jan-2017 14:09:29 America/Chicago] PHP Notice:  Undefined property: stdClass::$reminder in /home1/justrun/public_html/php/calendar/createnewevent.php on line 18
+[04-Jan-2017 14:09:29 America/Chicago] PHP Notice:  Undefined property: stdClass::$mailtoreminder in /home1/justrun/public_html/php/calendar/createnewevent.php on line 19

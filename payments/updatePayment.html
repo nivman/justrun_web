@@ -1,0 +1,52 @@
+<div id="paymentupdate" class="modal" role="dialog" >
+    <div class="modal-dialog" >
+        <div class="modal-content model-content-payments" >
+            <div class="modal-header model-header-payments" >
+                <button type="button" class="close pull-left" ng-click="hideUpdatedModal()" >&times;</button >
+                <h4 class="modal-title model-title-payments" dir="rtl">Update</h4 >
+				    <div id= "customer-name-paymant-update" class="pull-right col-sm-6"><p>  {{payments.formdataupdated.client_name}}</p></div>
+
+            </div >
+            <div class="modal-body model-body-payments" >
+                <form ng-submit="payments.updatePayment()" class="form-horizontal" novalidate >
+                  
+                    <table class="table table-payments-updated">
+		             <thead>
+                        <tr class="tableheader-payments-updated">
+					        <th id="update-header-payment-date">Date</th>
+                            <th id="update-header-payment-kind">Type </th>
+                            <th id="update-header-payment-for"> For</th>
+                            <th id="update-header-receipt_type"> Receipt Type</th>
+                            <th id="update-header-payment-amount">Total</th>
+                            <th id="update-header-payment-update">Update</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="payment in payments.formdataupdated.paymentsarr track by $index">
+                            <td class="dates-payment-table">
+                                <input  type="date" class="form-control payment_date_update" name="payment_date" ng-model="payment.payment_date" />
+                            </td>
+                            <td class="payment-type-update-td" style="width: 30%">
+                                <input type="text" class="form-control payment-type-update" name="payment_type" ng-model="payment.payment_type"/>
+                            </td>
+                            <td class="payment-for-update-td"  style="width: 30%" >
+                            <input type="text"class="form-control payment-for-update" name="payment_for" ng-model="payment.payment_for" />
+                        </td>
+                            <td class="payment-for-update-td"  style="width: 30%">
+                                <input type="text"class="form-control payment-for-update" name="receipt_type" ng-model="payment.receipt_type" />
+                            </td>
+                            <td class="col-sm-3 payment-total-update-td"  style="width: 30%">
+                                <input class="form-control payment-total-update" type="text" class="form-control" name="payment_total" ng-model="payment.total" />
+
+                            </td>
+                            <td class="col-sm-3 payment-total-update-td" >
+                                <span ng-click="payments.updateForm(payment.id,payment.payment_date,payment.payment_type,payment.payment_for,payment.receipt_type,payment.total,payment.is_paid,payment);$event.stopPropagation()" class="update-payment-table"></span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form >
+            </div >
+        </div>
+    </div>
+</div>

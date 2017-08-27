@@ -1,0 +1,16 @@
+<div id="login">
+    <form class="form-signin">
+        <h2 class="form-signin-heading text-center"> Log In - Just Run</h2>
+        <h2 class="form-signin-heading text-center" style="color: red;"> User or Password are not correct</h2>
+        <label for="inputEmail" class="sr-only">Email:</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" ng-model="loginInfo.username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="loginInfo.password" required>
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value= "Log in" ng-click="loginUser()"/>
+        <div id="forgotpassbtn-wrappar">
+            <a id="forgotpassbtn" ng-click="forgetPassword()">Forgot my password</a>
+        </div>
+    </form>
+</div>
+
+

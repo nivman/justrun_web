@@ -1,0 +1,853 @@
+md-backdrop.md-opaque.md-default-theme,
+.md-dialog-container {
+	position: fixed;
+}
+
+#custimage {
+	height: 150px;
+	margin: auto;
+	display: block;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.customer-info-header {
+	color: rgb(242, 242, 242);
+	font-weight: bold;
+	letter-spacing: 0.67px;
+	text-shadow: 4.01px 2.67px 2.67px rgba(0, 56, 81, 0.47);
+	text-align: center;
+	position: relative;
+	left:10%;
+}
+
+#enter-new-customer {
+	position: relative;
+	left: 22%;
+	background: -moz-linear-gradient(0% 50% 0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, rgba(0, 159, 227, 1)), color-stop(0.0409, rgba(13, 166, 230, 1)), color-stop(0.1281, rgba(34, 178, 234, 1)), color-stop(0.2256, rgba(49, 187, 237, 1)), color-stop(0.3407, rgba(57, 191, 238, 1)), color-stop(0.5169, rgba(60, 193, 239, 1)), color-stop(0.6314, rgba(55, 190, 238, 1)), color-stop(0.7711, rgba(40, 182, 235, 1)), color-stop(0.9233, rgba(15, 168, 230, 1)), color-stop(1, rgba(0, 159, 227, 1)));
+	background: -o-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -ms-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3' ,GradientType=0)";
+	background: linear-gradient(90deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	width: 146px;
+	height: 45px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3', GradientType=1);
+}
+
+.display-nonactive-result-customers {
+	margin: 0 !important;
+}
+
+#customer-active-user-label {
+	color: #009FE3;
+	left: 17%;
+	position: relative;
+}
+
+.panel-heading {
+	font-size: 30px;
+}
+
+.search-form {
+	margin-top: 3%;
+	position: relative;
+	left: -1px;
+}
+
+
+/*word warp for table's name column*/
+
+td.filename {
+	word-wrap: break-word;
+}
+.tbody-Payment-customer{
+    
+}
+.form-main-custmer-page {
+	/*	    margin-left: 10px !important;*/
+}
+
+.form-main-custmer-page-button {
+	margin-left: -7px !important;
+}
+
+.form-main-custmer-page-select-wrapper {
+	margin-left: 12px !important;
+}
+
+.search-name-customers {
+	position: relative;
+	height: 15px;
+	width: 85% !important;
+}
+
+.select-search-type-customers {
+	position: relative;
+	border-radius: 3px;
+	height: 35px;
+	width: 100%;
+	margin-right: -6px;
+}
+
+.selectContainer {
+	width: 120%;
+	position: relative;
+}
+
+.panel-primary-cusomers {
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	position: relative;
+	left:16%
+}
+
+.customers-heading {
+	text-align: center;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	letter-spacing: 0.7px;
+	color: #009FE3;
+	color: rgb(0, 159, 227);
+	text-shadow: 0.5px 0.5px 1px rgba(0, 56, 81, 0.13);
+	background: -moz-linear-gradient(50% 2.63% -90deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-linear-gradient(-90deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-gradient(linear, 50% 2.63%, 50% 98.77%, color-stop(0, rgba(0, 159, 227, 1)), color-stop(0.0409, rgba(13, 166, 230, 1)), color-stop(0.1281, rgba(34, 178, 234, 1)), color-stop(0.2256, rgba(49, 187, 237, 1)), color-stop(0.3407, rgba(57, 191, 238, 1)), color-stop(0.5169, rgba(60, 193, 239, 1)), color-stop(0.6314, rgba(55, 190, 238, 1)), color-stop(0.7711, rgba(40, 182, 235, 1)), color-stop(0.9233, rgba(15, 168, 230, 1)), color-stop(1, rgba(0, 159, 227, 1)));
+	background: -o-linear-gradient(-90deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -ms-linear-gradient(-90deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3' ,GradientType=0)";
+	background: linear-gradient(180deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3', GradientType=0);
+}
+
+.table-main-cutomer>thead {
+	color: #009FE3;
+	background: -moz-linear-gradient(50% 0% -90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0.0871, rgba(251, 252, 252, 1)), color-stop(1, rgba(204, 204, 204, 1)));
+	background: -o-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -ms-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC' ,GradientType=0)";
+	background: linear-gradient(180deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC', GradientType=0);
+}
+
+.search-button-customers {
+	color: white !important;
+	outline: none !important;
+	position: relative;
+	height: 35px;
+	border: 1px solid #cccccc !important;
+	padding-top: 6px;
+	background: -moz-linear-gradient(0% 50% 0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, rgba(0, 159, 227, 1)), color-stop(0.0409, rgba(13, 166, 230, 1)), color-stop(0.1281, rgba(34, 178, 234, 1)), color-stop(0.2256, rgba(49, 187, 237, 1)), color-stop(0.3407, rgba(57, 191, 238, 1)), color-stop(0.5169, rgba(60, 193, 239, 1)), color-stop(0.6314, rgba(55, 190, 238, 1)), color-stop(0.7711, rgba(40, 182, 235, 1)), color-stop(0.9233, rgba(15, 168, 230, 1)), color-stop(1, rgba(0, 159, 227, 1)));
+	background: -o-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -ms-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3' ,GradientType=0)";
+	background: linear-gradient(90deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3', GradientType=1);
+}
+
+.clear-search-result-customers {
+	position: relative;
+	color: white !important;
+	outline: none !important;
+	height: 35px;
+	padding-top: 6px;
+	border: 1px solid #cccccc;
+	background: -moz-linear-gradient(0% 50% 0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, rgba(0, 159, 227, 1)), color-stop(0.0409, rgba(13, 166, 230, 1)), color-stop(0.1281, rgba(34, 178, 234, 1)), color-stop(0.2256, rgba(49, 187, 237, 1)), color-stop(0.3407, rgba(57, 191, 238, 1)), color-stop(0.5169, rgba(60, 193, 239, 1)), color-stop(0.6314, rgba(55, 190, 238, 1)), color-stop(0.7711, rgba(40, 182, 235, 1)), color-stop(0.9233, rgba(15, 168, 230, 1)), color-stop(1, rgba(0, 159, 227, 1)));
+	background: -o-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -ms-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3' ,GradientType=0)";
+	background: linear-gradient(90deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3', GradientType=1);
+}
+
+.table-main-cutomer {
+	/*	table-layout: fixed;*/
+	width: 100%;
+}
+
+.table-main-cutomer>tbody>tr>td {
+	/*	border: 1px dotted silver;*/
+	word-break: break-all;
+}
+
+.table-main-cutomer>thead>tr>th {
+	text-align: left;
+}
+
+.birthdayDate {
+
+	position: absolute;
+	height: 20px;
+	width: 23px;
+	left: 2%;
+}
+@media only screen and (max-width: 768px) {
+	.birthdayDate {
+
+		position: absolute;
+		height: 17px;
+		width: 14px;
+		left: 35px !important;
+	}
+}
+.first-name-customer-table {
+	width: 12%;
+}
+
+.last-name-customer-table {
+	width: 12%;
+}
+
+.customer-table-cell {
+	width: 20%;
+    text-align: center;
+}
+
+.phone-number-table {
+	width: 9%;
+}
+
+.program-table {
+	width: 10%;
+}
+
+.trx-checked-table-one {
+	text-align: center;
+	width: 5%;
+}
+
+.trx-checked-table-zero {
+	text-align: center;
+	width: 5%;
+}
+
+.delete-customer-table {
+	width: 5%;
+	text-align: right;
+}
+
+.search-button-customers {
+	right: 10%;
+}
+
+.table-main-cutomer>tbody>tr:nth-child(even) {
+	background-color: #CEE5EF;
+}
+
+.customer-index {
+	font-weight: bold;
+}
+
+.index-customer-table {
+	width: 4%;
+}
+
+.trash-customers-table {
+	left: 33%;
+	text-align: right;
+	position: relative;
+	width: 20px;
+	height: 22px;
+	display: block;
+	background-image: url("http://justrun.site/images/trash.svg");
+	background-repeat: no-repeat;
+}
+
+.new-cutomer-from-modal {
+	border-top-left-radius: 31px 47px;
+	border-top-right-radius: 29px 47px;
+	border-bottom-left-radius: 27px 47px;
+	border-bottom-right-radius: 27px 47px;
+	background: -moz-linear-gradient(50% 0% -90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0.0871, rgba(251, 252, 252, 1)), color-stop(1, rgba(204, 204, 204, 1)));
+	background: -o-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -ms-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC' ,GradientType=0)";
+	background: linear-gradient(180deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC', GradientType=0);
+}
+
+.new-cutomer-from-header {
+	border-top-left-radius: 27px 47px;
+	border-top-right-radius: 27px 47px;
+	background: -webkit-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, rgba(0, 159, 227, 1)), color-stop(0.0409, rgba(13, 166, 230, 1)), color-stop(0.1281, rgba(34, 178, 234, 1)), color-stop(0.2256, rgba(49, 187, 237, 1)), color-stop(0.3407, rgba(57, 191, 238, 1)), color-stop(0.5169, rgba(60, 193, 239, 1)), color-stop(0.6314, rgba(55, 190, 238, 1)), color-stop(0.7711, rgba(40, 182, 235, 1)), color-stop(0.9233, rgba(15, 168, 230, 1)), color-stop(1, rgba(0, 159, 227, 1)));
+	background: -o-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -ms-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3' ,GradientType=0)";
+	background: linear-gradient(90deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+}
+
+.new-cutomer-from-body {
+	color: #009FE3;
+}
+
+#active {
+	font-size: 17px;
+	height: 100%;
+	color: #1AA7E3;
+	padding: 2px;
+	width: 145px;
+	z-index: 1111111;
+}
+
+#row-reminder {
+	position: relative;
+	top: -81px;
+}
+
+#active >input[type=checkbox] {
+	display: none;
+}
+
+input.switcher-new-customer[type=checkbox] + label {
+	font-size: 32px;
+	display: block;
+	position: relative;
+	background: url("http://justrun.site/images/full_day_button-calender_form.svg");
+	background-size: 126px 37px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+input.switcher-new-customer[type=checkbox]:checked + label {
+	display: none;
+	position: relative;
+	background: url("http://justrun.site/images/reminder_button-form.svg");
+	background-size: 126px 37px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+input.switcher-new-customer[type=checkbox] + label + label {
+	font-size: 32px;
+	display: none;
+	position: relative;
+	background: url("http://justrun.site/images/full_day_button-calender_form.svg");
+	background-size: 126px 37px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+input.switcher-new-customer[type=checkbox]:checked + label ~ label {
+	font-size: 32px;
+	display: block;
+	position: relative;
+	background: url("http://justrun.site/images/reminder_button-form.svg");
+	background-size: 126px 37px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+.active-p {
+	position: absolute;
+	top: 4px;
+	right: 68px;
+	font-size: 19px;
+	color: #1AA7E3;
+}
+
+#trx-new-cutomer-from {
+	font-size: 17px;
+	height: 100%;
+	color: #1AA7E3;
+	padding: 2px;
+	width: 145px;
+}
+
+#facebook-new-cutomer-from {
+	font-size: 17px;
+	height: 100%;
+	color: #1AA7E3;
+	padding: 2px;
+	width: 145px;
+	right: 10px;
+}
+#row-reminder {
+	position: relative;
+	top: -81px;
+}
+
+#trx-new-cutomer-from >input[type=checkbox] {
+	display: none;
+}
+#facebook-new-cutomer-from >input[type=checkbox] {
+	display: none;
+}
+.trx-new-cutomer-from-p {
+	position: absolute;
+	top: 4px;
+	right: 68px;
+	font-size: 19px;
+	color: #1AA7E3;
+}
+.facebook-new-cutomer-from-p {
+position: absolute;
+    top: 6px;
+    right: 58px;
+    font-size: 17px;
+    color: #1AA7E3;
+
+}
+#model-add-new-customer-from {
+	color: white;
+	position: absolute;
+	font-size: 31px;
+	left: 0;
+	right: 0;
+	top: 1px;
+	text-align: center;
+	font-weight: 500;
+	text-shadow: rgb(84, 84, 84) 2px 2px 7px;
+}
+
+#submit-new-customer-form {
+	position: relative;
+	margin: 0 auto;
+	border-radius: 12px;
+	border-radius: 12px;
+	font-size: 19px;
+	color: rgb(242, 242, 242);
+	font-weight: bold;
+	letter-spacing: 0.67px;
+	text-shadow: 4.01px 2.67px 2.67px rgba(0, 56, 81, 0.47);
+}
+
+.panel-customer-details {
+	border-top-left-radius: 27px 47px;
+	border-top-right-radius: 27px 47px;
+	border-bottom-left-radius: 27px 47px;
+	border-bottom-right-radius: 27px 47px;
+}
+
+.panel-customer-details-heading {
+	border-top-left-radius: 27px 47px;
+	border-top-right-radius: 27px 47px;
+	color: white !important;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bolder;
+	text-shadow: rgb(84, 84, 84) 1px 1px 6px;
+	position: relative;
+	top: -1px;
+	width: 100%;
+	left: 0px;
+	position: relative;
+	border-top-left-radius: 27px 47px;
+	border-top-right-radius: 27px 47px;
+	background: -moz-linear-gradient(0% 50% 0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, rgba(0, 159, 227, 1)), color-stop(0.0409, rgba(13, 166, 230, 1)), color-stop(0.1281, rgba(34, 178, 234, 1)), color-stop(0.2256, rgba(49, 187, 237, 1)), color-stop(0.3407, rgba(57, 191, 238, 1)), color-stop(0.5169, rgba(60, 193, 239, 1)), color-stop(0.6314, rgba(55, 190, 238, 1)), color-stop(0.7711, rgba(40, 182, 235, 1)), color-stop(0.9233, rgba(15, 168, 230, 1)), color-stop(1, rgba(0, 159, 227, 1)));
+	background: -o-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	background: -ms-linear-gradient(0deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#009FE3', endColorstr='#009FE3' ,GradientType=0)";
+	background: linear-gradient(90deg, rgba(0, 159, 227, 1) 0%, rgba(13, 166, 230, 1) 4.09%, rgba(34, 178, 234, 1) 12.81%, rgba(49, 187, 237, 1) 22.56%, rgba(57, 191, 238, 1) 34.07%, rgba(60, 193, 239, 1) 51.69%, rgba(55, 190, 238, 1) 63.14%, rgba(40, 182, 235, 1) 77.11%, rgba(15, 168, 230, 1) 92.33%, rgba(0, 159, 227, 1) 100%);
+}
+
+
+
+.panel-customer-details-vpn {
+	border-bottom-left-radius: 27px 47px;
+	border-bottom-right-radius: 27px 47px;
+	border-radius: 0px!important;
+}
+
+.vpn-goals{
+	bottom: 26px;
+}
+
+.icon-vpn{
+	right:28px;
+	position: absolute;
+	top:13px
+}
+
+.panel-customer-body-heading {
+	color: #1AA7E3;
+}
+
+#active-customer {
+	position: relative;
+	right: 10%;
+	width: 180px;
+}
+
+#active-customer >input[type=checkbox] {
+	display: none;
+}
+
+input.switcher[type=checkbox] + label {
+	font-size: 32px;
+	display: block;
+	/*  	right: 88px;*/
+	position: relative;
+	background: url("http://justrun.site/images/full_day_button-calender_form.svg");
+	background-size: 126px 37px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+input.switcher[type=checkbox]:checked + label {
+	display: none;
+	/* 	right: 88px;*/
+	position: relative;
+	background: url("http://justrun.site/images/reminder_button-form.svg");
+	background-size: 126px 37px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+input.switcher[type=checkbox] + label + label {
+	font-size: 32px;
+	display: none;
+	/*	right: 88px;*/
+	position: relative;
+	background: url("http://justrun.site/images/full_day_button-calender_form.svg");
+	background-size: 126px 37px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+input.switcher[type=checkbox]:checked + label ~ label {
+	font-size: 32px;
+	display: block;
+	/*	right: 88px;*/
+	position: relative;
+	background: url("http://justrun.site/images/reminder_button-form.svg");
+	background-size: 126px 37px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+.active-customer-p {
+	position: absolute;
+	top: 4px;
+	right: 68px;
+	font-size: 16px;
+	color: #1AA7E3;
+	padding: 5px;
+}
+
+#trx-customer {
+	position: relative;
+	right: 10%;
+	width: 180px;
+}
+
+#trx-customer >input[type=checkbox] {
+	display: none;
+}
+#facebook-customer {
+	position: relative;
+	right: 10%;
+	width: 180px;
+}
+
+#facebook-customer >input[type=checkbox] {
+	display: none;
+}
+input.switcher[type=checkbox] + label {
+	font-size: 32px;
+	display: block;
+	/*  	right: 88px;*/
+	position: relative;
+	background: url("http://justrun.site/images/full_day_button-calender_form.svg");
+	    background-size: 121px 31px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+input.switcher[type=checkbox]:checked + label {
+	display: none;
+	/* 	right: 88px;*/
+	position: relative;
+	background: url("http://justrun.site/images/reminder_button-form.svg");
+	    background-size: 121px 31px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+input.switcher[type=checkbox] + label + label {
+	font-size: 32px;
+	display: none;
+	/*	right: 88px;*/
+	position: relative;
+	background: url("http://justrun.site/images/full_day_button-calender_form.svg");
+	    background-size: 121px 31px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+input.switcher[type=checkbox]:checked + label ~ label {
+	font-size: 32px;
+	display: block;
+	/*	right: 88px;*/
+	position: relative;
+	background: url("http://justrun.site/images/reminder_button-form.svg");
+	    background-size: 121px 31px;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+.trx-customer-p {
+	position: absolute;
+	top: 7px;
+	right: 83px;
+	font-size: 16px;
+	color: #1AA7E3;
+	padding: 2px;
+}
+.facebook-customer-p {
+	    position: absolute;
+    top: 7px;
+    right: 77px;
+    font-size: 13px;
+    color: #1AA7E3;
+    padding: 2px;
+}
+.edit-customer-details-form {
+	position: relative;
+	width: 42%;
+	margin: 0 auto;
+	border-radius: 12px;
+	border-radius: 12px;
+	font-size: 19px;
+	color: rgb(242, 242, 242);
+	font-weight: bold;
+	letter-spacing: 0.67px;
+	text-shadow: 4.01px 2.67px 2.67px rgba(0, 56, 81, 0.47);
+	padding: 5px;
+	outline: none !important;
+
+}
+.swich-customer-bottom-form{
+/*      float: right;  */
+}
+
+
+.customer-back-button {
+	position: relative;
+	width: 30%;
+	margin: 0 auto;
+	border-radius: 12px;
+	border-radius: 12px;
+	font-size: 19px;
+	color: rgb(242, 242, 242);
+	font-weight: bold;
+	letter-spacing: 0.67px;
+	text-shadow: 4.01px 2.67px 2.67px rgba(0, 56, 81, 0.47);
+	padding: 5px;
+	outline: none !important;
+	left:80%
+}
+.customer-dataform-input-days{
+        margin: 4px 4px 0 !important;
+}
+
+.edit-customer-from {
+	outline: none !important;
+	background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+	background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #2fa4e7), to(#1d9ce5));
+	background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+	background-repeat: no-repeat;
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+	-webkit-filter: none;
+	filter: none;
+	border-bottom: 1px solid #178acc;
+	position: relative;
+	width: 42%;
+	margin: 0 auto;
+	border-radius: 12px;
+	border-radius: 12px;
+	font-size: 19px;
+	color: rgb(242, 242, 242);
+	font-weight: bold;
+	letter-spacing: 0.67px;
+	text-shadow: 4.01px 2.67px 2.67px rgba(0, 56, 81, 0.47);
+	padding: 5px;
+}
+
+.edit-customer-details-form-file {
+	outline: none !important;
+	background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+	background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #2fa4e7), to(#1d9ce5));
+	background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+	background-repeat: no-repeat;
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+	-webkit-filter: none;
+	filter: none;
+	border-bottom: 1px solid #178acc;
+	position: relative;
+	width: 42%;
+	margin: 0 auto;
+	border-radius: 12px;
+	border-radius: 12px;
+	color: rgb(242, 242, 242);
+	font-weight: bold;
+	letter-spacing: 0.67px;
+	text-shadow: 4.01px 2.67px 2.67px rgba(0, 56, 81, 0.47);
+}
+
+.file-customer-upload {
+	table-layout: fixed !important;
+}
+
+.trash-customers-table-file {
+	left: 46%;
+	text-align: right;
+	position: relative;
+	width: 20px;
+	height: 22px;
+	display: block;
+	background-image: url("http://justrun.site/images/trash.svg");
+	background-repeat: no-repeat;
+}
+
+.th-header-file {
+	background: -moz-linear-gradient(50% 0% -90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0.0871, rgba(251, 252, 252, 1)), color-stop(1, rgba(204, 204, 204, 1)));
+	background: -o-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -ms-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC' ,GradientType=0)";
+	background: linear-gradient(180deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC', GradientType=0);
+	color: #009FE3;
+	text-align: left !important;
+}
+.file-tableheader-customer{
+    text-align: center !important;
+}
+.file-tbod-customer{
+    text-align: center;
+}
+#comment {
+	position: relative;
+	width: 100%;
+	height: 331px;
+}
+.new-cutomer-from-body>md-backdrop{
+
+	height: auto !important;
+}
+.tableheader-friends {
+	background: -moz-linear-gradient(50% 0% -90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0.0871, rgba(251, 252, 252, 1)), color-stop(1, rgba(204, 204, 204, 1)));
+	background: -o-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -ms-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC' ,GradientType=0)";
+	background: linear-gradient(180deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC', GradientType=0);
+	color: #009FE3;
+	text-align: right !important;
+}
+
+.remove-benfit {
+	text-align: center;
+}
+
+.ticked-used {
+	text-align: center;
+}
+
+.friend-used {
+	text-align: center;
+}
+
+.friend-customers {
+	text-align: center;
+}
+
+.trash-customers-friend-file {
+	width: 20px;
+}
+
+.main-table-trx-headline {
+	position: relative;
+    text-align: center !important;
+}
+
+.birthday-bubble-title {
+	color: white;
+	position: absolute;
+	font-size: 31px;
+	left: 0;
+	right: 0;
+	top: 1px;
+	text-align: center;
+	font-weight: 500;
+	text-shadow: rgb(84, 84, 84) 2px 2px 7px;
+}
+
+.table-test >tbody >tr >td {
+	text-align: center;
+}
+
+.table-test >thead >tr >th {
+	text-align: center;
+}
+
+.main-new-ecustomr-form {
+	position: relative;
+	text-align: center;
+}
+
+#save-new-customer {
+
+	padding: 5px;
+	border-radius: 7px;
+	position: absolute;
+	border: 1px solid #cccccc;
+	background: -moz-linear-gradient(50% 0% -90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0.0871, rgba(251, 252, 252, 1)), color-stop(1, rgba(204, 204, 204, 1)));
+	background: -o-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	background: -ms-linear-gradient(-90deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC' ,GradientType=0)";
+	background: linear-gradient(180deg, rgba(251, 252, 252, 1) 8.71%, rgba(204, 204, 204, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FBFCFC', endColorstr='#CCCCCC', GradientType=0);
+	z-index: 11111;
+	display: inline-block;
+}
+
+#save-new-customer>div>h5 {
+	padding-left: 2px;
+	padding-top: 7px;
+	font-weight: bold;
+}
+#calender-main-contant>md-backdrop{
+	border-radius: 27px/47px;
+}
+.form-main-custmer-xsl {
+	float: left;
+}
+#xcl_icon {
+	position: relative;
+    height: 40px;
+	margin-right: 60px;
+    bottom: 5px;
+}

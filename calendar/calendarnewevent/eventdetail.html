@@ -1,0 +1,29 @@
+	<div class="event-detail modal-dialog" id="myModal" ng-guid="{{guid}}" ng-userName="{{username}}" ng-eventId={{eventId}} >
+			<div id="event-detail" class="modal-content">
+				<div id="event-header" class="modal-header">
+					<button ng-click="hideDialog()" class="close-dialog-calendar"><span id="edit-glyphicon-remove" class="glyphicon glyphicon-remove"></span></button>
+					<button id="reminder-notifications" ng-show="reminderNotifications==true" ng-click="openNotificationsDialog()">Cancel warning</button>
+					<div class="row" id="top-time-container">
+					<div class="col-xs-6  col-md-6" id="time-date-wrapper">
+					<p class="startDate memo-time">Start date: {{eventSelectedStartDate}}</p>
+					<p class="endDate memo-time">End date: {{eventSelectedEndDate}} </p>
+					</div>
+					<div class="col-xs-6  col-md-6" id="time-hour-wrapper">
+					<p class="startTime memo-time"> Beginning time: {{eventSelectedStartTime}}</p>
+					<p class="endTime memo-time">End time: {{eventSelectedEndTime}} </p>
+							</div>
+						</div>
+					<h4 ng-model="eventTitle" id="headline" class="modal-title">{{eventSelectedTitle}}</h4>
+
+			
+				<div class="modal-body">
+					<p id="event-description">{{eventSelectedDescription}}</p>
+				</div>
+				<div id="modal-footer" class="modal-footer">
+					<button class="edit-dialog-calendar" ng-click="alertEventOnClick('updateForm')"><span id="edit-glyphicon-pencil" class="glyphicon glyphicon-pencil"></span> Edit</button>
+					<button ng-click="dialogRemoveReminder($event)" id="removeEvent"><span id="remove-glyphicon-trash" class="glyphicon glyphicon-trash"></span>Delete</button>
+
+				</div>
+			</div>
+		</div>
+

@@ -1,0 +1,23 @@
+<md-dialog aria-label="Mango (Fruit)"  ng-cloak>
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+       <h2>Delete reminder</h2>
+        <span flex></span>
+           </div>
+    </md-toolbar>
+    
+    <md-dialog-actions layout="row">
+     <md-button class="remove-form" ng-click="answer('single')">
+         Delete a single reminder
+      </md-button>
+     
+      <md-button class="remove-form"  ng-click="answer('multi')">
+Delete all reminder
+        </md-button>
+      <md-button class="remove-form"  ng-click="answer('cencel')">
+        Cancel
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

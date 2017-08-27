@@ -1,0 +1,19 @@
+<div id="trxnew" class="modal" role="dialog" ng-controller="TrxFormController" ng-init="init()">
+    <div class="modal-dialog" >
+        <div id="main-modal-content-trx" class="modal-content" >
+            <div id="trx-form-header" class="modal-header" >
+                <button type="button"
+                        class="close pull-left"
+                        ng-click="hideModal()" >&times;</button >
+                <h4 class="header-title" class="modal-title" dir="rtl">Editing trx lesson</h4 >
+                <h4 class=header-title>{{datenow}}</h4>
+            </div >
+            <div class="modal-body"  id="new-event-form-trx"  >
+                <form ng-submit="createNewTrx()"class="form-horizontal" novalidate >
+                    <ng-include src="'trx/form/trxform.html'" ></ng-include >
+                </form >
+            </div >
+        </div >
+    </div >
+</div >
+

@@ -1,0 +1,77 @@
+<div class="panel panel-primary panel-payments-main" style="position: absolute;left: 15%;top: 185px;margin: 10px;">
+	<div class="panel-heading payments-heading">
+		<div class="pull-right">
+		Total Payments: {{payments.total}}$
+		</div>
+		<div class="pull-left">
+		<label class="control-label">Order Columns</label>
+			<select name="program" class="form-control" ng-model="payments.sorttable" ng-change="sortchange()">
+				<option selected value="-payment_date">Date Descending</option>
+				<option value="payment_date">Date Ascending</option>
+				<option value="-first_name">Name Descending </option>
+				<option value="first_name">Date Ascending</option>
+			</select>
+		</div>
+	</div>
+
+
+	<table class="table payment-full-table table-condensed" infinite-scroll="payments.loadMore(payments.counter)">
+
+		<thead class="full-payment-head-table">
+			<tr class="tableheader ">
+				<th id="paymant-row-counter">
+					#
+				</th>
+				<th>
+					<span class="paymant-col-name">First Name</span>
+					<span name="arrow-downpayment" ng-dropdown-multiselect="" options="payments.filters.firstname" selected-model="payments.firstname" extra-settings="settings" translation-texts="translations" events="selecEvents"></span>
+				</th>
+				<th>
+					<span class="paymant-col-name">Last Name</span>
+					<span name="arrow-downpayment" ng-dropdown-multiselect="" options="payments.filters.lastname" selected-model="payments.lastname" extra-settings="settings_last_name" translation-texts="translations" events="selecEvents_Last_name"></span>
+				</th>
+				<th>
+					<span class="paymant-col-name">Type</span>
+					<span name="arrow-downpayment" ng-dropdown-multiselect="" options="payments.filters.type" selected-model="payments.type" extra-settings="settings_type" translation-texts="translations" events="selecEvents_payment_type"></span>
+				</th>
+				<th>
+					<span class="paymant-col-name">For</span>
+					<span name="arrow-downpayment" ng-dropdown-multiselect="" options="payments.filters.for" selected-model="payments.for" extra-settings="settings_for" translation-texts="translations" events="selecEvents_payment_for"></span>
+				</th>
+				<th>
+					<span class="paymant-col-name">Receipt Type</span>
+					<span name="arrow-downpayment" ng-dropdown-multiselect="" options="payments.filters.receipt_type" selected-model="payments.receipt_type" extra-settings="settings_receipt" translation-texts="translations" events="selecEvents_payment_receipt"></span>
+				</th>
+				<th>
+					<span class="paymant-col-name">Date</span>
+					<span>
+                <span name="arrow-downpayment-date" class="glyphicon glyphicon-triangle-bottom" ng-click="dateSelectedBox()"></span>
+					</span>
+				</th>
+				<th>Total</th>
+				<th>Update</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody class="full-payment-body-table">
+			<tr ng-repeat="payment in payments.paymentssarr| orderBy:payments.sorttable">
+
+				<td class="index-customer-table"><div>{{$index + 1}}</div></td>
+				<td>{{payment.first_name}}</td>
+					<td>{{payment.last_name}}</td>
+					<td>{{payment.payment_type}}</td>
+					<td>{{payment.payment_for}}</td>
+					<td>{{payment.receipt_type}}</td>
+					<td class="dates-payment-table">{{payment.payment_date|date:'dd-MM-yyyy'}}</td>
+					<td>{{payment.total}}</td>
+				<td class="update-payment-table-td"><div ng-click="updateFull(payment,payments.paymentssarr.indexOf(payment));$event.stopPropagation()" class="update-payment-table-full"></div></td>
+
+				<td><span class="trash-payment-table" ng-click="payments.deletePayment(payment.id,payment.user_id,$event,payment.first_name,payment.payment_date,payments.paymentssarr.indexOf(payment),payment.total);$event.stopPropagation()"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="loading" ng-show="payments.isloading || payments.isdeleting" style="position: absolute">
+		<span>{{payments.loadingtext}}</span>
+		<md-progress-circular md-mode="indeterminate" style="margin: auto" md-diameter="100"></md-progress-circular>
+	</div>
+</div>

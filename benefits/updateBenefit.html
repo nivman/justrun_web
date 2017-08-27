@@ -1,0 +1,77 @@
+<div id="benefitnew"
+      class="modal"
+      role="dialog" >
+    <div class="modal-dialog" >
+        <div class="modal-content model-content-benefits" >
+            <div class="modal-header model-header-benefits" >
+                <button type="button" class="close pull-left" ng-click="hideUpdatedModal()" >&times;</button >
+                <h4 class="modal-title model-title-benefits">Update</h4 >
+            </div >
+            <div class="modal-body" >
+                <form ng-submit="benefits.updateBenefit()"
+                      class="form-horizontal"
+                      novalidate >
+                    <div class="form-group">
+                        <div class="pull-right col-sm-6"><label>Choose Customer:</label ></div>
+                        <div>
+                            <input type="text" ng-model="benefits.formdataupdated.client_name"
+                                   placeholder="Choose Customer" uib-typeahead="benefit as benefit.name for benefit in benefitsautoarr | filter:{name:$viewValue}"
+                                   class="form-control"  typeahead-min-length="0"   typeahead-select-on-blur="true" mousewheel="false" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >Award Name</label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="benefit_name"
+                                   ng-model="benefits.formdataupdated.benefit_name"
+                                   required />
+                        </div >
+                    </div >
+
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >Award Value</label >
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="total"
+                                   ng-model="benefits.formdataupdated.total"
+                                   required />
+                        </div >
+                    </div >
+
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >Expiry Date</label >
+                        <div class="col-sm-9">
+                            <input type="date"
+                                   class="form-control"
+                                   name="expire_date"
+                                   ng-model="benefits.formdataupdated.expire_date"
+                                   required />
+                        </div >
+
+                    </div >
+                    <div class="form-group " >
+                        <label class="col-sm-3 control-label" >Used Date</label >
+                        <div class="col-sm-9">
+                            <input type="date"
+                                   class="form-control"
+                                   name="used_date"
+                                   ng-model="benefits.formdataupdated.used_date"
+                                   required />
+                        </div >
+
+                    </div >
+                    <div class="buttons" >
+                        <button class="btn btn-primary btn-block benefit-submit-button"
+                                type="submit"
+                        >Update
+                        </button >
+                    </div >
+                </form >
+            </div >
+        </div >
+
+    </div >
+</div >

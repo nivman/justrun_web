@@ -1,0 +1,128 @@
+<div class="container-fluid" ng-init="init()">
+
+	<button id="enter-new-customer" class="btn btn-primary btn-enter" ng-click="showmodal()">New Customer</button>
+
+	<iframe id="txtArea1" style="display:none"></iframe>
+
+	<table id="exportTable" class="table">
+		<thead>
+			<tr class="tableheader">
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th> Age </th>
+				<th> Gender </th>
+				<th>Email</th>
+				<th>Phone Number</th>
+				<th>Program</th>
+				<th>TRX</th>
+				<th> Birth Date</th>
+				<th> Address</th>
+				<th>  Sign Date</th>
+				<th> Facebook</th>
+				<th> Notes</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="customer in customers.customersExsport"   on-finish-render="ngRepeatFinished">
+				<td class="first-name-customer-table"><span>{{::customer.first_name}}</span></td>
+                     <td class="last-name-customer-table"><div>{{::customer.last_name}}</div></td>
+                        <td class="trx-checked-table-one"><div>{{::customer.age}}</div></td>
+			  			<td class="birthday-customer-table">{{::customer.gender}}</td>
+						<td class="customer-table-cell"><div>{{::customer.email}}</div></td>
+						<td class="phone-number-table"><div>{{::customer.phone_number}}</div></td>
+                        <td class="program-table"><div>{{::customer.program}}</div></td>
+                        <td class="trx-checked-table-one" ng-if="customer.trx == 1"> <input  type="checkbox"  checked disabled></td>
+                        <td class="trx-checked-table-zero" ng-if="customer.trx == 0"> <input  type="checkbox"   disabled> </td>
+                        <td class="birthday-customer-table">{{::customer.birth_date}}</td>
+			  			<td class="birthday-customer-table">{{::customer.address}}</td>
+			  			<td class="birthday-customer-table">{{::customer.sign_date}}</td>
+			  			<td class="birthday-customer-table">{{::customer.facebook}}</td>
+			  			<td class="birthday-customer-table">{{::customer.comment}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+    <form  class="search-form">
+
+        <div class="col-md-2 col-xs-5 form-group form-main-custmer-page" >
+            <input type="search" class="form-control search-name-customers" id="name" ng-model="searchtext" placeholder="Search" style="left:290%" />
+        </div>
+        <div class="col-md-2 col-xs-6 form-group form-main-custmer-page-select-wrapper"  >
+            <div class="selectContainer" style="left:25%">
+
+               <select class="select-search-type-customers" ng-model="Options.selectedoption" ng-options="option.label for option in Options.availableOptions">
+                   <option value="">Choose Column</option> <!-- not selected / blank option -->
+               </select>
+            </div>
+            </div>
+        <div class="col-md-1 col-xs-3  form-group form-main-custmer-page-button" style="left:23%" >
+            <button class="btn btn-default btn-md search-button-customers" ng-click="search()">Search</button>
+        </div>
+        <div class="col-md-5 col-xs-3  form-group form-main-custmer-page" style="left:25%">
+            <input value="Clear" type="button" class="btn btn-default btn-md clear-search-result-customers" ng-click="clear()"/>
+        </div>
+		 <div class="col-md-1 col-xs-3  form-group form-main-custmer-xsl" >
+<img id="xcl_icon" ng-click="fnExcelReport()" src="http://justrun.site/images/excl_icon.svg">
+			 </div>
+    </form >
+	
+        <div class="col-xs-12 col-md-12 customer-table" >
+            <label for="customer-active-user" id="customer-active-user-label">
+                <input value={{customers.active_text}} type="checkbox" id="customer-active-user" class="btn btn-default btn-md display-nonactive-result-customers" ng-click="customers.SwitchActiveUsers()">
+                {{customers.active_text}}
+            </label>
+            <div class="panel panel-primary panel-primary-cusomers" >
+					
+                <div class="panel-heading customers-heading"> Customers</div>
+<!--					table-condensed-->
+                <table class="table  table-main-cutomer" infinite-scroll="customers.loadMore()"  >
+                    <thead>
+                    <tr class="tableheader">
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th class="main-table-trx-headline"> Age </th>
+						<th class="main-table-trx-headline">Email</th>
+						<th>Phone Number</th>
+                        <th>Program</th>
+                        <th class="main-table-trx-headline">TRX</th>
+						<th >Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-click ="customers.goToCustomerPage(customer,$index)" ng-class="::{'birthday':customers.checkBirthday(customer)}" ng-repeat="customer in customers.customersarr">
+						<td class="index-customer-table"><div>{{$index + 1}}</div></td> 
+                     <td class="first-name-customer-table"><span><img src="http://justrun.site/images/present.svg"  ng-if="customers.checkBirthday(customer)"  class="birthdayDate" aria-hidden="true"/></span><span>    {{    ::customer.first_name      }}  </span></td>
+				<td class="last-name-customer-table">
+					<div>{{::customer.last_name}}</div>
+				</td>
+				<td class="trx-checked-table-one">
+					<div>{{::customer.age}}</div>
+				</td>
+				<td class="customer-table-cell">
+					<div>{{::customer.email}}</div>
+				</td>
+				<td class="phone-number-table">
+					<div>{{::customer.phone_number}}</div>
+				</td>
+				<td class="program-table">
+					<div>{{::customer.program}}</div>
+				</td>
+				<td class="trx-checked-table-one" ng-if="customer.trx == 1">
+					<input type="checkbox" checked disabled>
+				</td>
+				<td class="trx-checked-table-zero" ng-if="customer.trx == 0">
+					<input type="checkbox" disabled>
+				</td>
+				<td class="delete-customer-table"><span class="trash-customers-table" ng-click="customers.deleteCustomer(customer.id,$event,customer.first_name);$event.stopPropagation()"></span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="loading" ng-show="customers.isloading || customers.isdeleting" style="position: absolute">
+	<span>{{customers.loadingtext}}</span>
+	<md-progress-circular md-mode="indeterminate" style="margin: auto" md-diameter="100"></md-progress-circular>
+</div>
+</div>
+
+</div>

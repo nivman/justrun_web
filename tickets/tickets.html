@@ -1,0 +1,39 @@
+<div class="container-fluid" ng-init="init()">
+    <button class="btn btn-primary btn-enter"
+            ng-click="showmodal()" style="left:16%">New Ticket
+    </button >
+	<div id="tickets-panel-primary" class="panel panel-primary panel-primary-cusomers">
+                <div class="panel-heading customers-heading">Tickets Issued<div class="pull-left">
+                    </div>
+                </div>
+    <div id="tickets-wrapper-div" class="customer-table" >
+
+            <table class="table tickets-table" infinite-scroll="tickets.loadMore()" >
+                <thead>
+                <tr class="tickets-tableheader">
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Sessions per tickect</th>
+                    <th>Update</th>
+					<th>Delete</th>
+                </tr>
+                </thead>
+                <tbody class="tickets-tbody">
+                <tr ng-repeat="ticket in tickets.ticketsarr track by $index">
+                    <td>{{ticket.client_name}}</td>
+                    <td>{{ticket.type}}</td>
+                    <td class="ticket-total-td">
+					
+                    <i class="minus-ticket fa  fa-2x fa-minus-circle" aria-hidden="true" style="color:#2fa4e7" ng-click="update('subtract',ticket.id,$index)"></i>
+                        <label class="ticket-total">{{ticket.total}}</label>
+                        <i class="plus-ticket fa  fa-2x fa-plus-circle" aria-hidden="true" style="color:#2fa4e7" ng-click="update('add',ticket.id,$index)"></i>
+                </td>
+					<td><span ng-click="updateTotal(ticket.total,ticket.client_name,$index,ticket.id)" class="update-tickets-table"></span></td>
+                    <td  class="trash-tickets-td"><span class="trash-tickets-table" ng-click="tickets.deleteTicket(ticket.id,$index)"></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+	</div>
+</div>
+

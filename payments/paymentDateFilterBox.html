@@ -1,0 +1,135 @@
+<div id="newpaymentdate" class="modal" role="dialog">
+	<div class="modal-dialog payment-fiter-by-date-dialog">
+		<div class="modal-content payment-fiter-by-date-content">
+			<div class="modal-header payment-fiter-by-date-header">
+				<button type="button" class="close pull-left" ng-click="hideDatesdModal()">&times;</button>
+				<h4 class="modal-title payment-fiter-by-date-title" dir="rtl">Filter By Date</h4 >
+            </div >
+            <div class="modal-body"   >
+                <form id="dialogContainer"  ng-submit="applyFilterDate()">
+
+                    <div id="check_overlaping">
+                        <div layout="row" layout-sm="column" layout-align="space-around">
+                            <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+                            <h5>Save</h5>
+                        </div>
+                    </div>
+                    <div class="form-group paymeny-date-from-label">
+
+             <div class="col-xs-12 col-sm-12 input-group">
+			<div class="col-xs-2 col-md-2">
+			<input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default-1" autocomplete="off" ng-model="options.oneday" ng-change="changeOption('oneday')"/>
+            <div class="[ btn-group ]">
+			   <label for="fancy-checkbox-default-1" class="[ btn btn-default ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+				</label>
+            		  </div> 
+							</div>
+								<div class="col-xs-4 col-md-4 payment-label-date-wrapper">
+					  <label class="payment-label-date"> One Day</label>
+							</div>
+					<div class="col-xs-6 col-md-6">		
+                            <input type="date" class="form-control" ng-model="payments.date_filter.day" ng-disabled="!options.oneday" />
+						</div>
+                    </div>
+
+                    <div class="col-xs-12  col-sm-12 input-group">
+						
+							<div class="col-xs-2 col-md-2">
+			<input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default-2" autocomplete="off" ng-model="options.range" ng-change="changeOption('range')"/>
+            <div class="[ btn-group ]">
+			   <label for="fancy-checkbox-default-2" class="[ btn btn-default ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+				</label>
+            		  </div> 
+							</div>
+								<div class="col-xs-4 col-md-4 payment-label-date-wrapper">
+					  <label class="payment-label-date">Start Date:</label>
+							</div>
+					<div class="col-xs-6 col-md-6">		
+                            <input type="date" class="form-control" ng-model="payments.date_filter.start" ng-disabled="!options.range" />
+						</div>
+                    </div>	
+	            <div class="col-xs-12  col-sm-12 input-group">
+						
+							<div class="col-xs-2 col-md-2">
+			<input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default-2" autocomplete="off" ng-model="options.range" ng-change="changeOption('range')"/>
+            <div class="[ btn-group ]">
+			   <label for="fancy-checkbox-default-2" class="[ btn btn-default ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+				</label>
+            		  </div> 
+							</div>
+								<div class="col-xs-4 col-md-4 payment-label-date-wrapper">
+					  <label class="payment-label-date">End Date:</label>
+							</div>
+					<div class="col-xs-6 col-md-6">		
+                            <input type="date" class="form-control" ng-model="payments.date_filter.end" ng-disabled="!options.range" />
+						</div>
+                    </div>						
+        <div class="col-xs-12  col-sm-12 input-group">
+		<div class="col-xs-2 col-md-2">	
+		<input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default-3" autocomplete="off" ng-model="options.month" ng-change="changeOption('month')"/>	
+			 <div class="[ btn-group ]">
+			   <label for="fancy-checkbox-default-3" class="[ btn btn-default ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+				</label>
+             </div> 
+			</div> 
+			<div class="col-xs-4 col-md-4 payment-label-date-wrapper">
+				  <label class="payment-label-date"> Month</label>
+			</div>
+			<div class="col-xs-6 col-md-6">		
+				       <select name="reminderMounth" class="form-control" ng-model="payments.date_filter.month" ng-required="true" ng-disabled="!options.month">
+                                <option value="1">January</option>
+                                <option value="2">February </option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+				</div>
+		</div>
+	<div class="col-xs-12  col-sm-12 input-group">
+		<div class="col-xs-2 col-md-2">	
+		<input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default-4" autocomplete="off" ng-model="options.year" ng-change="changeOption('year')"/>	
+			 <div class="[ btn-group ]">
+			   <label for="fancy-checkbox-default-4" class="[ btn btn-default ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+				</label>
+             </div> 
+			</div> 
+			<div class="col-xs-4 col-md-4 payment-label-date-wrapper">
+				  <label class="payment-label-date">Year</label>
+			</div>
+			<div class="col-xs-6 col-md-6">	
+				<div id="filter-payment-by-year"  year-drop-for-general-payment-table offset="-1" range="30"></div>
+				</div>
+		</div>				
+	 </div>
+
+				<div class="row">
+					<div class="col-md-6">
+                    <input   class="btn btn-primary btn-block submit-payment-dates" value="OK" ng-click="applyFilterDate('approve')">
+					</div>
+					<div class="col-md-6">	
+                    <input   class="btn btn-primary btn-block submit-payment-dates" value="Cancel" ng-click="applyFilterDate('clear')">
+						</div>
+				</div>
+                </form>
+            </div >
+        </div >
+
+    </div >
+</div >
